@@ -19,11 +19,11 @@ second = 2
 sum = 0
 
 while (first < 4000000):
-    print ("my first number is", first)
+    #print ("my first number is", first)
     if IsEven(first):
-        print ("oh it is even")
+        #print ("oh it is even")
         sum = sum + first
-        print ("-----------> now the sum is", sum)
+        #print ("-----------> now the sum is", sum)
     new = first + second
     first = second
     second = new  
