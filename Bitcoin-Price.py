@@ -10,9 +10,8 @@ data = response.json()
 print(data)
 
 
-# Jadi
+# Me
 import requests
-response = requests.get('https://api.coinbase.com/v2/prices/buy?currency=USD')
-data = response.json()
-print(data)
-print ('at this moment, Bitcoin is %i dollars' % float(response.json['data']['amount']))
+response = requests.get('https://api.coinbase.com/v2/prices/buy?currency=USD',
+                        proxies={'https': 'socks5://127.0.0.1:1080'})
+print ('at this moment, Bitcoin is %i dollars' % float(response.json()['data']['amount']))
