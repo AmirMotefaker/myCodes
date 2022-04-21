@@ -25,3 +25,4 @@ price = float(response.json()['data']['amount'])
 
 if price < my_good_price:
     inform_amir()
+print (response.text)
