@@ -1,3 +1,5 @@
+# Code by amotef@gmail.com
+
 import random
 random.seed()
 #for i in range (1, 10):
