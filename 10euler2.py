@@ -1,6 +1,5 @@
 # Code by amotef@gmail.com
 
-
 #projecteuler.net
 #ID 2
 
