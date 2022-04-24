@@ -1,3 +1,5 @@
+# Code by amotef@gmail.com
+
 def is_prime(n):
     avval = True
     for i in range(2, int(n**0.5)+1):
