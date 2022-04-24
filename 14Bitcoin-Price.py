@@ -1,3 +1,5 @@
+# Code by amotef@gmail.com
+
 # Code#1
 import requests
 
