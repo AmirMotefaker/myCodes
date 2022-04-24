@@ -1,3 +1,6 @@
+# Code by amotef@gmail.com
+
+
 # Bazi Sang-Kaghaz-Gheychi
 # Game Rock(R)-Paper(P)-Scissors(S) ---> RPS
 # version 3
