@@ -1,3 +1,6 @@
+# Code by amotef@gmail.com
+
+
 # farz konid yek otagh darim ke tosh 50 nafar adam hastand.va ha kodom az in adamha 100 dolar pol darand. man miram to va yek beshkan mizanam,
 # vaghti man beshkan mizanam har adami 1$ be ye adame random mideh, beshkan badi ro ke mizanam har adami 1$ be ye adamae random dige mideh,...
 # (dar vagh az in tarigh dareh pol jabeja mishe). bad az ye modat chi misheh? agar kasi polesh tamom shode boud, dige to bazi nist.
