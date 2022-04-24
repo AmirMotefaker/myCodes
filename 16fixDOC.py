@@ -1,3 +1,7 @@
+#dar in barnameh ba tavajoh be inke dar yek file doc.docx< koliehe adad az rast be chap neveshteh
+#shode boudand. masalan: adad 1370 be sorat 0731 neveshteh shodeh va bayad eslah shavad
+#va tedad adaadi ke eslah shode ro dar payan elam konad
+#file nahaei ra dar yek file digar be name fixed.doc.docx zakhireh konad.
 from docx import Document
 
 numbersdone = 0
