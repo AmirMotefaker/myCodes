@@ -1,5 +1,7 @@
 # Code by amotef@gmail.com
 
+# convert image to dice pattern
+
 
 from PIL import Image, ImageOps, ImageDraw
 
