@@ -19,7 +19,7 @@ nimd = ImageDraw.Draw(nim) #nimd=new image draw - ImageDraw.Draw: You can use th
 #img.show()
 #print (img.width, img.height, dicew, diceh, dicesize)
 
-print (' you will need %s dices for this!\n' % (dicew * diceh))
+print ('you will need %s dices for this!\n' % (dicew * diceh))
 
 for y in range(0, img.height-dicesize, dicesize):
     for x in range(0, img.width-dicesize, dicesize):
@@ -32,11 +32,12 @@ for y in range(0, img.height-dicesize, dicesize):
         nimd.rectangle([(x, y), (x+dicesize,  y+dicesize)], int(thisSectorColor))
 
         diceNumber = (255-thisSectorColor) * 6 / 255 + 1 # this is normal method convert scale: multiply to max (6 in dice) divid in max start(255) plus 1(for 1,2,3,4,5,6 in Dice)
-        print (int(diceNumber)) ,
-    print
+        print (int(diceNumber), end='', flush=True),
+    #print
 
 
 #nim.show()
         
         #print (x, y, thisSectorColor)
+        
         
