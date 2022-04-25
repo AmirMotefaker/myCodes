@@ -1,4 +1,4 @@
-# 
+# Code by amotef@gmail.com
 
 
 from PIL import Image, ImageOps, ImageDraw
