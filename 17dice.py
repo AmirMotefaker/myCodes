@@ -25,9 +25,8 @@ for y in range(0, img.height-dicesize, dicesize):
                 thisColor = img.getpixel((x+dicex, y+dicey)) # Image.getpixel: Returns the pixel value at a given position.
                 thisSectorColor += thisColor
         thisSectorColor /= (dicesize ** 2)
-        nimd.rectangle([(x, y), (x+dicesize,  y+dicesize)], thisSectorColor)
+        nimd.rectangle([(x, y), (x+dicesize,  y+dicesize)], int(thisSectorColor))
 
 nim.show()
         
         #print (x, y, thisSectorColor)
-        
