@@ -1,4 +1,5 @@
 # Code by amotef@gmail.com
+# With the help of @jadijadi
 
 # convert image to dice pattern
 
