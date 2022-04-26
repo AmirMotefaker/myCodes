@@ -92,7 +92,52 @@ else:
     converted = weight * 0.45
     print("Weight in Kgs: " + str(converted))
     
+# i = 1
+# while i <= 10:
+#     print(i * '*')
+#     i = i + 1
 
 
+# List
+# names = ["John", "Bob", "Mosh", "Sam", "Mary"]
+# names[0] = "Jon"
+# print(names[0:3])
+# print(names)
+# print(names[0])
+# print(names[-1])
+
+# List Methods
+# numbers = [1, 2, 3, 4, 5]
+# numbers.clear()
+# numbers.remove(3)
+# numbers.insert(0, -1)
+# numbers.append(6)
+# print(numbers)
+
+# numbers = [1, 2, 3, 4, 5]
+# print(1 in numbers)
+
+# numbers = [1, 2, 3, 4, 5]
+# print(len(numbers))
 
 
+# For Loops
+# numbers = [1, 2, 3, 4, 5]
+# for items in numbers:
+#     print(items)
+#
+# i = 0
+# while i < len(numbers):
+#     print(numbers[i])
+#     i = i + 1
+
+
+# The range() Function
+# numbers = range(5, 10, 2)
+# for number in range(5):
+# print(number)
+
+
+# Tuples
+# numbers = (1, 2, 3, 3)
+# print(numbers.count(3))
