@@ -10,7 +10,7 @@
 
 
     
-def larrgestPalindromeProduct(n):
+def largestPalindromeProduct(n):
  
     upper_limit = (10**(n))-1  # largest number of n-1 digit. For example, for n = 2, upper_limit is 99
     lower_limit = 1 + upper_limit//10   # One plus this number is lower limit which is product of two numbers. For example, for n = 2, lower_limit is 10.
@@ -36,5 +36,5 @@ def larrgestPalindromeProduct(n):
   
 n1 = 2
 n2 = 3
-print('Largest palindrome product', n1, '- digit is: ', larrgestPalindromeProduct(n1))
-print('Largest palindrome product', n2, '- digit is: ', larrgestPalindromeProduct(n2))
+print('Largest palindrome product', n1, '- digit is: ', largestPalindromeProduct(n1))
+print('Largest palindrome product', n2, '- digit is: ', largestPalindromeProduct(n2))
