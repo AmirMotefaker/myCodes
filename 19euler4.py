@@ -8,11 +8,9 @@
 # The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
-# Prime Factor: any of the prime numbers that can be multiplied to give the original number.
-# Example: The prime factors of 15 are 3 and 5 (because 3×5=15, and 3 and 5 are prime numbers).
 
     
-def larrgestPalindrome(n):
+def larrgestPalindromeProduct(n):
  
     upper_limit = (10**(n))-1  # largest number of n-1 digit. For example, for n = 2, upper_limit is 99
     lower_limit = 1 + upper_limit//10   # One plus this number is lower limit which is product of two numbers. For example, for n = 2, lower_limit is 10.
@@ -20,35 +18,23 @@ def larrgestPalindrome(n):
     max_product = 0 # Initialize result
     for i in range(upper_limit,lower_limit-1, -1):
      
-        for j in range(i,lower_limit-1,-1):
-         
-            # calculating product of
-            # two n-digit numbers
+        for j in range(i,lower_limit-1,-1): #  calculating product of two n-digit numbers
             product = i * j
             if (product < max_product):
                 break
             number = product
             reverse = 0
-  
-            # calculating reverse of
-            # product to check
-            # whether it is palindrome or not
-            while (number != 0):
-             
+
+            while (number != 0): # calculating reverse of product to check whether it is palindrome or not
                 reverse = reverse * 10 + number % 10
                 number =number // 10
-             
-  
-             # update new product if exist and if
-             # greater than previous one
-            if (product == reverse and product > max_product):
+
+            if (product == reverse and product > max_product):  # update new product if exist and if greater than previous one
                 max_product = product
-         
-     
+
     return max_product
- 
- 
+  
 n1 = 2
 n2 = 3
-print('Largest palindrome product', n1, '- digit is: ', larrgestPalindrome(n1))
-print('Largest palindrome product', n2, '- digit is: ', larrgestPalindrome(n2))
+print('Largest palindrome product', n1, '- digit is: ', larrgestPalindromeProduct(n1))
+print('Largest palindrome product', n2, '- digit is: ', larrgestPalindromeProduct(n2))
