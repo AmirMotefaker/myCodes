@@ -14,8 +14,8 @@
     
 def larrgestPalindrome(n):
  
-    upper_limit = (10**(n))-1  # largest number of n-1 digit.
-    lower_limit = 1 + upper_limit//10   # One plus this number is lower limit which is product of two numbers.
+    upper_limit = (10**(n))-1  # largest number of n-1 digit. For example, for n = 2, upper_limit is 99
+    lower_limit = 1 + upper_limit//10   # One plus this number is lower limit which is product of two numbers. For example, for n = 2, lower_limit is 10.
   
     max_product = 0 # Initialize result
     for i in range(upper_limit,lower_limit-1, -1):
@@ -47,7 +47,6 @@ def larrgestPalindrome(n):
      
     return max_product
  
-# Driver code
  
 n1 = 2
 n2 = 3
