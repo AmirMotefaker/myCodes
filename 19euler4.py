@@ -1,7 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
-# ID 4
+# Problem 4
 
 # Largest Palindrome Product
 # A palindromic number reads the same both ways.
