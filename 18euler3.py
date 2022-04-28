@@ -1,7 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
-# ID 3
+# Problem 3
 
 # Largest prime factor
 # The prime factors of 13195 are 5, 7, 13 and 29. Largest prime factor 13195 is 29.
