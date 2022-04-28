@@ -14,13 +14,14 @@
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
 
+# Solution 1
 # def sum_square_difference(n):
 #       return (((n**2) * (n + 1)**2) / 4) - (n * (n + 1) * (2*n + 1) / 6)
 # n = int(input("Enter Number: "))
 # print(int(sum_square_difference(n)))
 
 
- 
+# Solution 2 
 def Square_Difference(n):
  
     l = (n * (n + 1) * (2 * n + 1)) / 6  # sum of the squares of the first n natural numbers
