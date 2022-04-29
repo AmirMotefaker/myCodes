@@ -49,7 +49,7 @@ def Sieve_of_Eratosthenes(n):  # Sieve of Eratosthenes: method for finding all p
 			prime.append(i)
 	return prime
 
-nth_prime = 100001   # the 10001st prime number
+nth_prime = 10001   # the 10001st prime number
 
 Max_bound = nth_prime*math.log(nth_prime) + nth_prime*math.log(math.log(nth_prime))   # nlogn+n(loglogn−1)<prime_number<nlogn+nlognlogn
 
