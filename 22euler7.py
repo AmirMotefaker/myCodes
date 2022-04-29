@@ -34,8 +34,8 @@
 # primes smaller than or equal to
 # n using Sieve of Eratosthenes
  
-	
-	
+
+
 # solution 1
 # import time
 
@@ -83,7 +83,7 @@
 # solution 2 // Best of the Best
 import time, math
 
-start = time.time()   #Time at the start of program execution
+start_time = time.time()   #Time at the start of program execution
 
 def Sieve_of_Eratosthenes(n):  # Sieve of Eratosthenes: method for finding all primes up to (and possibly including) a given natural n.
 	is_prime = [True]*n
@@ -109,4 +109,4 @@ print ("the 10001st prime number is:", Sieve_of_Eratosthenes(int(Max_bound))[100
 
 end_time = time.time()   #Time at the end of execution
 
-print ("Time of program execution:", (end_time - start))   # Time of program execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
