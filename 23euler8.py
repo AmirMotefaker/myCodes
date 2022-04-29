@@ -31,7 +31,7 @@
 
 import time
 
-start = time.time()   #Time at the start of program execution
+start_time = time.time()   #Time at the start of program execution
 
 s = "73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
@@ -53,22 +53,21 @@ s = "73167176531330624919225119674426574742355349194934\
 84580156166097919133875499200524063689912560717606\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
-adjacentLength = 13
-largestProduct = 0
+adjacent_Length = 13
+largest_Product = 0
 
-for i in range(0, len(s) - adjacentLength + 1):
+for i in range(0, len(s) - adjacent_Length + 1):
 
-  product = 1
+    product = 1
 
-  for j in range(i, i + adjacentLength):
-    product *= int(s[j: j + 1])
+    for j in range(i, i + adjacent_Length):
+        product *= int(s[j: j + 1])
 
-  if product > largestProduct:
-    largestProduct = product
+    if product > largest_Product:
+        largest_Product = product
 
-print ("Largest product in a series is: ", largestProduct)
+print ("Largest product in a series is: ", largest_Product)
 
 end_time = time.time()   #Time at the end of execution
 
-print ("Time of program execution:", (end_time - start))   # Time of program execution
-
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
