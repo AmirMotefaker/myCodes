@@ -29,7 +29,6 @@
 # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 
-from re import S
 import time
 
 start = time.time()   #Time at the start of program execution
