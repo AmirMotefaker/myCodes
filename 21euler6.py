@@ -24,7 +24,6 @@
 # Solution 2 
 
 import time
-
 start_time = time.time()   #Time at the start of program execution
 
 def Square_Difference(n):
@@ -47,5 +46,4 @@ x = int(input("Enter Number: "))
 print("sum of the squares of the first", x,"natural numbers is",  int(Square_Difference(x)))
 
 end_time = time.time()   #Time at the end of execution
-
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
