@@ -19,8 +19,6 @@ start_time = time.time()   #Time at the start of program execution
 from math import gcd  # gcd: Return the greatest common divisor of the specified integer arguments.
 from functools import reduce  # reduce: Apply function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
 
-
-
 def LCM(a, b):  # LCM: Return the least common multiple of the specified integer arguments.
     return a // gcd(a, b) * b  
 N = int(input("The LCM for numbers 1 through "))
