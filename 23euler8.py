@@ -30,7 +30,6 @@
 
 
 import time
-
 start_time = time.time()   #Time at the start of program execution
 
 s = "73167176531330624919225119674426574742355349194934\
@@ -69,5 +68,4 @@ for i in range(0, len(s) - adjacent_Length + 1):
 print ("Largest product in a series is: ", largest_Product)
 
 end_time = time.time()   #Time at the end of execution
-
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
