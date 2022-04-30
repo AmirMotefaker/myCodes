@@ -23,7 +23,7 @@ def LCM(a, b):  # LCM: Return the least common multiple of the specified integer
     return a // gcd(a, b) * b  
 N = int(input("The LCM for numbers 1 through "))
 N_reduce = reduce(LCM, range(N//2+1, N+1))
-print ("The LCM for numbers 1 through" ,N, "is", N_reduce)
+print ("The LCM for numbers 1 through" ,N, "is:", N_reduce)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
