@@ -23,7 +23,7 @@ for i in range(2, 2000000):
     if is_Prime(i):
         sum += i
 
-print ("Sum of all the primes below two million =",sum)
+print ("Sum of all the primes below two million =", sum)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
