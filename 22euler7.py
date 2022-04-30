@@ -82,7 +82,6 @@
 
 # solution 2 // Best of the Best
 import time, math
-
 start_time = time.time()   #Time at the start of program execution
 
 def Sieve_of_Eratosthenes(n):  # Sieve of Eratosthenes: method for finding all primes up to (and possibly including) a given natural n.
@@ -108,5 +107,4 @@ Max_bound = nth_prime*math.log(nth_prime) + nth_prime*math.log(math.log(nth_prim
 print ("the 10001st prime number is:", Sieve_of_Eratosthenes(int(Max_bound))[10000])
 
 end_time = time.time()   #Time at the end of execution
-
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
