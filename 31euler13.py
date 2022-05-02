@@ -106,6 +106,8 @@
 # 20849603980134001723930671666823555245252804609722
 # 53503534226472524250874054075591789781264330331690
 
+# ** They give you 100 numbers that you need to sum, each of which is 50 digits long **
+
 
 import time
 start_time = time.time()   #Time at the start of program execution
