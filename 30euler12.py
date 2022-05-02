@@ -19,10 +19,8 @@
 # What is the value of the first triangle number to have over five hundred divisors?
 
 
-import time
+import time, math
 start_time = time.time()   #Time at the start of program execution
-
-import math
 
 def count_factors(num):
     factors = 0
