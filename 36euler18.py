@@ -36,7 +36,7 @@
 
 # https://lucidmanager.org/data-science/project-euler-18/
 # Project Euler 18 and 67 are identical, other than that the data in the second version is more extensive than in the first one.
-# In this post, I kill two Eulers with one code. These two problems are logically similar to Project Euler 15.
+# These two problems are logically similar to Project Euler 15.
 
 import time
 start_time = time.time()   #Time at the start of program execution
