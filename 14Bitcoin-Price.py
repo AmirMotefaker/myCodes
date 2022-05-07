@@ -1,10 +1,12 @@
 # Code by amotef@gmail.com
 
-# Code#1
-import requests
+# run with VPN
 
-response = requests.get('https://api.coinbase.com/v2/prices/buy?currency=USD')
-print (response.text)
+# Code#1
+# import requests
+
+# response = requests.get('https://api.coinbase.com/v2/prices/buy?currency=USD')
+# print (response.text)
 
 
 # Code#2
@@ -15,16 +17,16 @@ print ('at this moment, Bitcoin is %i dollars' % float(response.json()['data']['
 
 
 
-# Code#3
-import requests
+# # Code#3
+# import requests
 
-def inform_amir():
-    print("hi there, price is good.")
+# def inform_amir():
+#     print("hi there, price is good.")
 
-my_good_price = 18000
-response = requests.get('https://api.coinbase.com/v2/prices/buy?currency=USD')
-price = float(response.json()['data']['amount'])
+# my_good_price = 18000
+# response = requests.get('https://api.coinbase.com/v2/prices/buy?currency=USD')
+# price = float(response.json()['data']['amount'])
 
-if price < my_good_price:
-    inform_amir()
-print (response.text)
+# if price < my_good_price:
+#     inform_amir()
+# print (response.text)
