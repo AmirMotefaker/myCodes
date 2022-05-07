@@ -2,26 +2,44 @@
 
 # Game Rock(R)-Paper(P)-Scissors(S) ---> RPS
 
-player1 = input("Player1, make your move: ")
-print("Taghalob Nakon! \n\n " * 20)
-player2 = input("Player2, make your move: ")
+# Code by amotef@gmail.com
 
-if player1 == player2:
+# Game Rock(R)-Paper(P)-Scissors(S) ---> RPS
+
+from random import randint
+
+# print("Sang...")
+# print("Kaghaz...")
+# print("Gheychi...")
+
+#SAng -----> sang
+player = input("Player, make your move: ").lower()
+rand_num = randint(0, 2) # 0 1 2
+if rand_num == 0:
+    computer = "sang"
+elif rand_num == 1:
+    computer = "kaghaz"
+else:
+    computer = "gheychi"
+
+print(f'computer plays "{computer}"')
+
+if player == computer:
     print("Maghadir mosavi hastand.")
-elif player1 == "sang":
-    if player2 == "gheychi":
+elif player == "sang":
+    if computer == "gheychi":
         print("Player 1 wins!")
-    elif player2 == "kaghaz":
+    elif computer == "kaghaz":
         print("Player 2 wins!")
-elif player1 == "kaghaz":
-    if player2 == "gheychi":
+elif player == "kaghaz":
+    if computer == "gheychi":
         print("Player 2 wins!")
-    elif player2 == "sang":
+    elif computer == "sang":
         print("Player 1 wins!")
-elif player1 == "gheychi":
-    if player2 == "sang":
+elif player == "gheychi":
+    if computer == "sang":
         print("Player 2 wins!")
-    elif player2 == "kaghaz":
+    elif computer == "kaghaz":
         print("Player 1 wins!")
 else:
     print("Khatei rokh dadeh ast...")
