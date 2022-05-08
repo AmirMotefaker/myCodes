@@ -1,4 +1,5 @@
 # Code by amotef@gmail.com
+# With the help of edureka!
 
 # Snake Game
 
