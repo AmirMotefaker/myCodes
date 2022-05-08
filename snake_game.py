@@ -1,3 +1,7 @@
+# Code by amotef@gmail.com
+
+# Snake Game
+
 import pygame
 import time
 import random
