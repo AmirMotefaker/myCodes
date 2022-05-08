@@ -1,3 +1,7 @@
+# Code by amotef@gmail.com
+
+# Hangman Game
+
 #welcoming the user
 name = input("Enter your name: ")
 print("Hello, " + name, "Let's play hangman!")
@@ -5,7 +9,7 @@ print("Hello, " + name, "Let's play hangman!")
 print("So what's your first guess?")
 
 #here we set the edureka
-word = "edureka"
+word = "voyeurism"
 
 #creates an variable with an empty value
 guesses = ''
