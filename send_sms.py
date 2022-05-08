@@ -1,16 +1,18 @@
 # Code by amotef@gmail.com
 
-#dar in barnameh ebteda az file phones.txt shomareh telefonha ro mikhonim, 
-#bad tavasot api_key sherkate kavenegar, va url gofteh shodeh dar in site,
-#yek matn ''' امیر هستم ببخشید بابت تاخیر در ارسال کتاب''' baraye kasani
-#ke ketab kharidan va ketab ba takhir resideh dasteshoun<barashon payamak(SMS)
-#ersal mishe.
+# Send SMS
+
+# dar in barnameh ebteda az file phones.txt shomareh telefonha ro mikhonim, 
+# bad tavasot api_key sherkate kavenegar, va url gofteh shodeh dar in site,
+# yek matn ''' امیر هستم ''' baraye kasani ke ketab kharidan va ketab ba 
+# takhir resideh dasteshoun<barashon payamak(SMS)
+# ersal mishe.
 
 
 import requests
 
 filename  = 'phones.txt'
-text = ''' امیر هستم ببخشید بابت تاخیر در ارسال کتاب'''
+text = ''' امیر هستم'''
 
 def readphones(filename):
     with open(filename) as f:
