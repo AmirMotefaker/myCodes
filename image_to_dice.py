@@ -37,7 +37,7 @@ for y in range(0, img.height-dicesize, dicesize):
     #print
 
 
-#nim.show()
+# nim.show()
         
         #print (x, y, thisSectorColor)
         
