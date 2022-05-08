@@ -1,3 +1,8 @@
+# Code by amotef@gmail.com
+# With the help of adityatri @geeksforgeeks
+
+# Scientific Calculator
+
 from tkinter import *
 import math
 import tkinter.messagebox
