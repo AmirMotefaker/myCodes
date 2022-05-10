@@ -2,7 +2,7 @@
 
 # URL Shortener
 
-import pyshorteners
+import pyshorteners   # pyshorteners: A simple URL shortening API wrapper Python library.
 long_url = input("Enter the URL to shorten: ")
  
 #TinyURL shortener service
