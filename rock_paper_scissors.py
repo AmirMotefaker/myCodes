@@ -2,10 +2,6 @@
 
 # Game Rock(R)-Paper(P)-Scissors(S) ---> RPS
 
-# Code by amotef@gmail.com
-
-# Game Rock(R)-Paper(P)-Scissors(S) ---> RPS
-
 from random import randint
 
 # print("Sang...")
