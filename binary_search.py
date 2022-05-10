@@ -6,7 +6,7 @@
 # finds the position of a target value within a sorted array. The binary search algorithm 
 # can be classified as a dichotomies divide-and-conquer search algorithm and executes in logarithmic time.
 
-# https://tinyurl.com/ycktx5aw
+# https://bit.ly/39asCUE
 
 def binary_search(item_list,item):
 	first = 0
