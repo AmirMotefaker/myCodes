@@ -2,15 +2,19 @@
 
 # Google Logo
 
+
 # Solution 1
 
 import turtle
 
 t=turtle.Turtle()
+
 #select color
 t.color('#4285F4','#4285F4') ## RBG value of color
+
 #change the pen size
 t.pensize(5)
+
 #change the drawing speed
 t.speed(3)
 
@@ -36,7 +40,6 @@ t.end_fill()
 t.begin_fill()
 
 ## second circle for yellow color
-
 t.color("#F4B400","#F4B400")
 t.right(180)
 t.forward(50)
@@ -67,7 +70,7 @@ t.forward(50)
 t.end_fill()
 
 
-##Draw last circle
+# Draw last circle
 
 t.right(90)
 t.circle(100,100)
