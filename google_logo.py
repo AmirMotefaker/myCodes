@@ -4,6 +4,18 @@
 
 
 # Solution 1
+# Step-by-Step code:
+# 1- First, we have import the turtle library.
+# 2- We have created a turtle object by turtle.
+#    Turtle() method and save it in the variable t, now we will use t variable to draw lines, curves etc.
+# 3- turtle.forward(distance) method is used draw a straight line.
+# 4- turtle.right(angle) and turtle.left(angle) methods are used to rotate the turtle.
+# 5- turtle.goto() method is used to reposition the pen.
+# 6- t.penup() method is used to stop drawing i.e. pen up means now the pen is in up state.
+# 7- t.pendown() method signals the pen to start drawing.
+# 8- t.color() method is used to change the color of pen.
+# 9- t.speed() method is used to change the drawing speed.
+# 10- t.circle() method is used to draw circle with specified radius.
 
 import turtle
 
@@ -71,7 +83,6 @@ t.end_fill()
 
 
 # Draw last circle
-
 t.right(90)
 t.circle(100,100)
 t.color('#4285F4','#4285F4')
