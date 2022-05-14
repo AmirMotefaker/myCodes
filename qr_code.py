@@ -94,16 +94,37 @@
 
 
 ## Styled QR Code - Add or Embed an image to a QR Code
-import qrcode
-from qrcode.image.styledpil import StyledPilImage
+# import qrcode
+# from qrcode.image.styledpil import StyledPilImage
 
-qr = qrcode.QRCode(version=4, box_size=10, border=4, \
-error_correction=qrcode.constants.ERROR_CORRECT_H)
+# qr = qrcode.QRCode(version=4, box_size=10, border=4, \
+# error_correction=qrcode.constants.ERROR_CORRECT_H)
 
-qr.add_data('https://github.com/AmirMotefaker')
-img = qr.make_image(image_factory=StyledPilImage, \
-embeded_image_path="image.png")
+# qr.add_data('https://github.com/AmirMotefaker')
+# img = qr.make_image(image_factory=StyledPilImage, \
+# embeded_image_path="image.png")
 
-img.save('github_AmirMotefaker.png')
+# img.save('github_AmirMotefaker.png')
 
+
+## Decode or Read a QR Code from an Image
+# Install opencv-python: pip install opencv-python
+
+import cv2
+# read the QR Code image
+img = cv2.imread("github_AmirMotefaker.png")
+# initialize the cv2 QR Code detector
+qr_detector = cv2.QRCodeDetector()
+
+# detect QR Code and decode
+Data, BBOX, Straight_QRcode = qr_detector.detectAndDecode(img)
+
+# Check if there is a QR code or not.
+if BBOX is not None:
+    if Data:
+        print(Data)
+    else:
+        print("No data is there")
+else:
+    print("There is not any QR code")
 
