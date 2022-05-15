@@ -1,6 +1,6 @@
 # Code by amotef@gmail.com
 
-# Tic-Tac-Toe Game (BASIC)
+# Tic-Tac-Toe Game (basic)
 
 
 # Step-by-Step
