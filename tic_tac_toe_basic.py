@@ -1,8 +1,7 @@
 # Code by amotef@gmail.com
 
-# Tic-Tac-Toe Game
+# Tic-Tac-Toe Game (BASIC)
 
-# Solution 1
 
 # Step-by-Step
 # 1- Create a board using a 2-dimensional array and initialize each element as empty.
