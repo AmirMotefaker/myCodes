@@ -45,12 +45,12 @@
 
 # def pyr_pat_deg(n):
      
-#     k = 2*n - 2       # number of spaces
+#     k = 2*n - 2    # number of spaces
 #     for i in range(0, n):
 #         for j in range(0, k):
 #             print(end=" ")
      
-#         k = k - 2           # decrementing k after each loop
+#         k = k - 2  # decrementing k after each loop
      
 #         for j in range(0, i+1):
 #             print("* ", end="")
@@ -73,7 +73,7 @@
 
 # def triangle(n):
      
-#     k = n - 1       # number of spaces
+#     k = n - 1   # number of spaces
  
 #     for i in range(0, n):
 #         for j in range(0, k):
@@ -98,6 +98,29 @@
 # * * * * *
 
 
+### Reverse Pyramid Pattern
+
+def pattern_rev(n):
+      k = 2*n -2
+      for i in range(n,-1,-1):
+           for j in range(k,0,-1):
+                print(end=" ")
+           k = k +1
+           for j in range(0, i+1):
+                print("*", end=" ")
+           print()
+
+n = int(input("Enter the number of rows : ")) 
+pattern_rev(n)
+
+
+## Output (row = 5)
+# * * * * * * 
+#  * * * * *
+#   * * * *
+#    * * *
+#     * *
+#      *
 
 ### Number Pattern
 
@@ -178,18 +201,18 @@
 
 ### Continuous Character pattern
 
-def  count_alpha(n):
+# def  count_alpha(n):
      
-    num = 65
-    for i in range(0, n):
-        for j in range(0, i+1):
-            ch = chr(num)
-            print(ch, end=" ")
-            num = num +1
-        print("\r")
+#     num = 65
+#     for i in range(0, n):
+#         for j in range(0, i+1):
+#             ch = chr(num)
+#             print(ch, end=" ")
+#             num = num +1
+#         print("\r")
 
-n = int(input("Enter the number of rows : "))
-count_alpha(n)
+# n = int(input("Enter the number of rows : "))
+# count_alpha(n)
 
 
 ## Output (row = 5)
