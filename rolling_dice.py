@@ -62,9 +62,22 @@
 
 ## Rolling the dice(advanced+)
 
-from random import randint
-repeat = True
-while repeat:
-    print("You rolled",randint(1,6))
-    print("Do you want to roll again?")
-    repeat = ("y" or "yes") in input().lower()
+# from random import randint
+# repeat = True
+# while repeat:
+#     print("You rolled",randint(1,6))
+#     print("Do you want to roll again?")
+#     repeat = ("y" or "yes") in input().lower()
+
+
+## Rolling the dice(advanced+2)
+
+import random
+while True:
+    print('''1.roll the dice    2.To exit ''')
+    user = int(input("what you want to do\n"))
+    if user==1:
+        number = random.randint(1,6)
+        print(number)
+    else:
+        break
