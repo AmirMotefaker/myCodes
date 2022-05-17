@@ -152,19 +152,19 @@
 
 ### Character Pattern
 
-def alphabet(n):
+# def alphabet(n):
      
-    num = 65   # initializing value corresponding to 'A'
+#     num = 65   # initializing value corresponding to 'A'
  
-    for i in range(0, n):
-        for j in range(0, i+1):
-            ch = chr(num)   # converting to char
-            print(ch, end=" ")
-        num = num + 1
-        print("\r")
+#     for i in range(0, n):
+#         for j in range(0, i+1):
+#             ch = chr(num)   # converting to char
+#             print(ch, end=" ")
+#         num = num + 1
+#         print("\r")
  
-n = int(input("Enter the number of rows : "))
-alphabet(n)
+# n = int(input("Enter the number of rows : "))
+# alphabet(n)
 
 
 ## Output (row = 5)
@@ -174,3 +174,27 @@ alphabet(n)
 # D D D D
 # E E E E E
 
+
+
+### Continuous Character pattern
+
+def  count_alpha(n):
+     
+    num = 65
+    for i in range(0, n):
+        for j in range(0, i+1):
+            ch = chr(num)
+            print(ch, end=" ")
+            num = num +1
+        print("\r")
+
+n = int(input("Enter the number of rows : "))
+count_alpha(n)
+
+
+## Output (row = 5)
+# A 
+# B C
+# D E F
+# G H I J
+# K L M N O
