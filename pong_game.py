@@ -8,6 +8,16 @@
 # Step 3- Create an event to move the paddle vertically on pressing a certain key.
 # Step 4- Create the function to update the score after each player misses a collision.
 
+# Game keys
+
+# Left_Player:
+# paddle up = "e"
+# paddle down = "x"
+
+# Right_Player:
+# paddle up = "Up"
+# paddle down = "Down"
+
 import turtle
  
  
