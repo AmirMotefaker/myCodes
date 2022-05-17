@@ -100,18 +100,18 @@
 
 ### Reverse Pyramid Pattern
 
-def pattern_rev(n):
-      k = 2*n -2
-      for i in range(n,-1,-1):
-           for j in range(k,0,-1):
-                print(end=" ")
-           k = k +1
-           for j in range(0, i+1):
-                print("*", end=" ")
-           print()
+# def pattern_rev(n):
+#       k = 2*n -2
+#       for i in range(n,-1,-1):
+#            for j in range(k,0,-1):
+#                 print(end=" ")
+#            k = k +1
+#            for j in range(0, i+1):
+#                 print("*", end=" ")
+#            print()
 
-n = int(input("Enter the number of rows : ")) 
-pattern_rev(n)
+# n = int(input("Enter the number of rows : ")) 
+# pattern_rev(n)
 
 
 ## Output (row = 5)
@@ -121,6 +121,37 @@ pattern_rev(n)
 #    * * *
 #     * *
 #      *
+
+
+### Right Start Pattern
+
+def pattern_right(n):
+      for i in range(0, n):
+            for j in range(0, i + 1):
+                print("* ", end="")
+            print()
+      for i in range(n, 0 , -1):
+            for j in range(0, i + 1):
+               print("* ", end="")
+            print()
+ 
+n = int(input("Enter the number of rows : "))
+pattern_right(n)
+
+
+## Output (row = 5)
+# * 
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+
+
 
 ### Number Pattern
 
