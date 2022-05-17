@@ -8,8 +8,9 @@
 # Step 3- Create an event to move the paddle vertically on pressing a certain key.
 # Step 4- Create the function to update the score after each player misses a collision.
 
+
 import turtle
- 
+  
 # Create screen
 sc = turtle.Screen()
 sc.title("Pong game")
@@ -46,4 +47,20 @@ hit_ball.penup()
 hit_ball.goto(0, 0)
 hit_ball.dx = 5
 hit_ball.dy = -5
-
+ 
+ 
+# Initialize the score
+left_player = 0
+right_player = 0
+ 
+ 
+# Displays the score
+sketch = turtle.Turtle()
+sketch.speed(0)
+sketch.color("blue")
+sketch.penup()
+sketch.hideturtle()
+sketch.goto(0, 260)
+sketch.write("Left_player : 0    Right_player: 0",
+             align="center", font=("Courier", 24, "normal"))
+ 
