@@ -27,19 +27,33 @@
 
 ## Rolling the dice(Dice Roller)
 
-import random
+# import random
 
-min_val = 1
-max_val = 6
+# min_val = 1
+# max_val = 6
 
-roll_again = "yes"
+# roll_again = "yes"
 
-while roll_again == "yes" or roll_again == "y":
-    print("Rolling The Dices...")
-    print("The Values are :")
+# while roll_again == "yes" or roll_again == "y":
+#     print("Rolling The Dices...")
+#     print("The Values are :")
     
-    print(random.randint(min_val, max_val))
-    print(random.randint(min_val, max_val))
+#     print(random.randint(min_val, max_val))
+#     print(random.randint(min_val, max_val))
     
-    roll_again = input("Roll the Dices Again?")
+#     roll_again = input("Roll the Dices Again?")
 
+
+
+## Rolling the dice(advanced)
+
+from random import randint
+
+def roll_dice():
+    print(f"Number is: {randint(1,6)}")
+
+roll_dice()   
+
+# whatever = 12 # Put the number of times you want to simulate here
+# for number in range(whatever):
+#     roll_dice()
