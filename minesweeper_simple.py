@@ -2,6 +2,14 @@
 
 # Simple Minesweeper Game
 
+
+# Random Features
+#   The project contains random feature that will randomly spawn some object in a certain area.
+# User-friendly Interface
+#   This project was design with a simple user-friendly interface.
+# Basic Controls
+#   This project uses a basic control function so that player can easily be playable.
+
 import random
 import re
 
