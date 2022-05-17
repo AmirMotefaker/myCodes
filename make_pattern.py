@@ -101,19 +101,19 @@
 
 ### Number Pattern
 
-def num_pat(n):
+# def num_pat(n):
      
-    num = 1   # starting number
+#     num = 1   # starting number
  
-    for i in range(0, n):
-        num = 1
-        for j in range(0, i+1):
-            print(num, end=" ")
-            num = num + 1   # incrementing number at each column
-        print("\r")
+#     for i in range(0, n):
+#         num = 1
+#         for j in range(0, i+1):
+#             print(num, end=" ")
+#             num = num + 1   # incrementing number at each column
+#         print("\r")
  
-n = int(input("Enter the number of rows : "))
-num_pat(n)
+# n = int(input("Enter the number of rows : "))
+# num_pat(n)
 
 
 ## Output (row = 5)
@@ -122,5 +122,30 @@ num_pat(n)
 # 1 2 3 
 # 1 2 3 4
 # 1 2 3 4 5
+
+
+
+### Number Pattern without reassigning(count number)
+
+def count_num(n):
+     
+    num = 1
+ 
+    for i in range(0, n):
+        for j in range(0, i+1):
+            print(num, end=" ")
+            num = num + 1
+        print("\r")
+ 
+n = int(input("Enter the number of rows : "))
+count_num(n)
+
+
+## Output (row = 5)
+# 1 
+# 2 3
+# 4 5 6
+# 7 8 9 10
+# 11 12 13 14 15
 
 
