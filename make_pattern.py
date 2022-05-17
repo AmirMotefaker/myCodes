@@ -127,18 +127,18 @@
 
 ### Number Pattern without reassigning(count number)
 
-def count_num(n):
+# def count_num(n):
      
-    num = 1
+#     num = 1
  
-    for i in range(0, n):
-        for j in range(0, i+1):
-            print(num, end=" ")
-            num = num + 1
-        print("\r")
+#     for i in range(0, n):
+#         for j in range(0, i+1):
+#             print(num, end=" ")
+#             num = num + 1
+#         print("\r")
  
-n = int(input("Enter the number of rows : "))
-count_num(n)
+# n = int(input("Enter the number of rows : "))
+# count_num(n)
 
 
 ## Output (row = 5)
@@ -148,4 +148,29 @@ count_num(n)
 # 7 8 9 10
 # 11 12 13 14 15
 
+
+
+### Character Pattern
+
+def alphabet(n):
+     
+    num = 65   # initializing value corresponding to 'A'
+ 
+    for i in range(0, n):
+        for j in range(0, i+1):
+            ch = chr(num)   # converting to char
+            print(ch, end=" ")
+        num = num + 1
+        print("\r")
+ 
+n = int(input("Enter the number of rows : "))
+alphabet(n)
+
+
+## Output (row = 5)
+# A 
+# B B 
+# C C C
+# D D D D
+# E E E E E
 
