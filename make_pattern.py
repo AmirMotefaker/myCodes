@@ -234,26 +234,26 @@
 
 ### Diamond Shaped Pattern
 
-def pattern_diamond(n):
-     k = 2 * n - 2
-     for i in range(0, n):
-          for j in range(0 , k):
-               print(end=" ")
-          k = k - 1
-          for j in range(0 , i + 1 ):
-               print("* ", end="")
-          print()
-     k = n - 2
-     for i in range(n , -1, -1):
-        for j in range(k , 0 , -1): 
-            print(end=" ")
-        k = k + 1
-        for j in range(0 , i + 1):
-            print("* ", end="")
-        print()
+# def pattern_diamond(n):
+#      k = 2 * n - 2
+#      for i in range(0, n):
+#           for j in range(0 , k):
+#                print(end=" ")
+#           k = k - 1
+#           for j in range(0 , i + 1 ):
+#                print("* ", end="")
+#           print()
+#      k = n - 2
+#      for i in range(n , -1, -1):
+#         for j in range(k , 0 , -1): 
+#             print(end=" ")
+#         k = k + 1
+#         for j in range(0 , i + 1):
+#             print("* ", end="")
+#         print()
  
-n = int(input("Enter the number of rows : "))
-pattern_diamond(n)
+# n = int(input("Enter the number of rows : "))
+# pattern_diamond(n)
 
 
 ## Output (row = 5)
@@ -268,6 +268,46 @@ pattern_diamond(n)
 #       * * * 
 #        * *
 #         *
+
+
+
+### Hollow Diamond pattern
+
+row = int(input('Enter number of row: '))
+
+# The upper part of the Diamond
+for i in range(1, row+1):
+    for j in range(1,row-i+1):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        if j==1 or j==2*i-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+# The bottom of the Diamond
+for i in range(row-1,0, -1):
+    for j in range(1,row-i+1):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        if j==1 or j==2*i-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+
+## Output (row = 5)
+#     *
+#    * *
+#   *   *
+#  *     *
+# *       *
+#  *     *
+#   *   *
+#    * *
+#     *
 
 
 
