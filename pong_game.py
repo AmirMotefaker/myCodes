@@ -8,9 +8,9 @@
 # Step 3- Create an event to move the paddle vertically on pressing a certain key.
 # Step 4- Create the function to update the score after each player misses a collision.
 
-
 import turtle
-  
+ 
+ 
 # Create screen
 sc = turtle.Screen()
 sc.title("Pong game")
@@ -64,3 +64,80 @@ sketch.goto(0, 260)
 sketch.write("Left_player : 0    Right_player: 0",
              align="center", font=("Courier", 24, "normal"))
  
+ 
+# Functions to move paddle vertically
+def paddleaup():
+    y = left_pad.ycor()
+    y += 20
+    left_pad.sety(y)
+ 
+ 
+def paddleadown():
+    y = left_pad.ycor()
+    y -= 20
+    left_pad.sety(y)
+ 
+ 
+def paddlebup():
+    y = right_pad.ycor()
+    y += 20
+    right_pad.sety(y)
+ 
+ 
+def paddlebdown():
+    y = right_pad.ycor()
+    y -= 20
+    right_pad.sety(y)
+ 
+ 
+# Keyboard bindings
+sc.listen()
+sc.onkeypress(paddleaup, "e")
+sc.onkeypress(paddleadown, "x")
+sc.onkeypress(paddlebup, "Up")
+sc.onkeypress(paddlebdown, "Down")
+ 
+ 
+while True:
+    sc.update()
+ 
+    hit_ball.setx(hit_ball.xcor()+hit_ball.dx)
+    hit_ball.sety(hit_ball.ycor()+hit_ball.dy)
+ 
+    # Checking borders
+    if hit_ball.ycor() > 280:
+        hit_ball.sety(280)
+        hit_ball.dy *= -1
+ 
+    if hit_ball.ycor() < -280:
+        hit_ball.sety(-280)
+        hit_ball.dy *= -1
+ 
+    if hit_ball.xcor() > 500:
+        hit_ball.goto(0, 0)
+        hit_ball.dy *= -1
+        left_player += 1
+        sketch.clear()
+        sketch.write("Left_player : {}    Right_player: {}".format(
+                      left_player, right_player), align="center",
+                      font=("Courier", 24, "normal"))
+ 
+    if hit_ball.xcor() < -500:
+        hit_ball.goto(0, 0)
+        hit_ball.dy *= -1
+        right_player += 1
+        sketch.clear()
+        sketch.write("Left_player : {}    Right_player: {}".format(
+                                 left_player, right_player), align="center",
+                                 font=("Courier", 24, "normal"))
+ 
+    # Paddle ball collision
+    if (hit_ball.xcor() > 360 and
+                        hit_ball.xcor() < 370) and (hit_ball.ycor() < right_pad.ycor()+40 and hit_ball.ycor() > right_pad.ycor()-40):
+        hit_ball.setx(360)
+        hit_ball.dx*=-1
+        
+    if (hit_ball.xcor()<-360 and
+                       hit_ball.xcor()>-370) and (hit_ball.ycor()<left_pad.ycor()+40 and hit_ball.ycor()>left_pad.ycor()-40):
+        hit_ball.setx(-360)
+        hit_ball.dx*=-1
