@@ -71,23 +71,23 @@
 
 ### Simple pyramid pattern Triangle
 
-def triangle(n):
+# def triangle(n):
      
-    k = n - 1       # number of spaces
+#     k = n - 1       # number of spaces
  
-    for i in range(0, n):
-        for j in range(0, k):
-            print(end=" ")
+#     for i in range(0, n):
+#         for j in range(0, k):
+#             print(end=" ")
      
-        k = k - 1
+#         k = k - 1
      
-        for j in range(0, i+1):
-            print("* ", end="")
+#         for j in range(0, i+1):
+#             print("* ", end="")
      
-        print("\r")
+#         print("\r")
  
-n = int(input("Enter the number of rows : "))
-triangle(n)
+# n = int(input("Enter the number of rows : "))
+# triangle(n)
 
 
 ## Output (row = 5)
@@ -97,5 +97,30 @@ triangle(n)
 #  * * * *
 # * * * * *
 
+
+
+### Number Pattern
+
+def num_pat(n):
+     
+    num = 1   # starting number
+ 
+    for i in range(0, n):
+        num = 1
+        for j in range(0, i+1):
+            print(num, end=" ")
+            num = num + 1   # incrementing number at each column
+        print("\r")
+ 
+n = int(input("Enter the number of rows : "))
+num_pat(n)
+
+
+## Output (row = 5)
+# 1 
+# 1 2
+# 1 2 3 
+# 1 2 3 4
+# 1 2 3 4 5
 
 
