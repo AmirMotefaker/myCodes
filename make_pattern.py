@@ -155,26 +155,26 @@
 
 ### Left Start Pattern
 
-def pattern(n):
-    k = 2 * n - 2
-    for i in range(0, n-1):
-        for j in range(0, k):
-            print(end=" ")
-        k = k - 2
-        for j in range(0, i + 1):
-            print("* ", end="")
-        print()
-    k = -1
-    for i in range(n-1,-1,-1):
-        for j in range(k,-1,-1):
-            print(end=" ")
-        k = k + 2
-        for j in range(0, i + 1):
-            print("* ", end="")
-        print()
+# def pattern_left(n):
+#     k = 2 * n - 2
+#     for i in range(0, n-1):
+#         for j in range(0, k):
+#             print(end=" ")
+#         k = k - 2
+#         for j in range(0, i + 1):
+#             print("* ", end="")
+#         print()
+#     k = -1
+#     for i in range(n-1,-1,-1):
+#         for j in range(k,-1,-1):
+#             print(end=" ")
+#         k = k + 2
+#         for j in range(0, i + 1):
+#             print("* ", end="")
+#         print()
  
-n = int(input("Enter the number of rows : ")) 
-pattern(n)
+# n = int(input("Enter the number of rows : ")) 
+# pattern_left(n)
 
 
 ## Output (row = 5)
@@ -187,6 +187,48 @@ pattern(n)
 #     * * *
 #       * *
 #         *
+
+
+
+### Hourglass Pattern 
+
+def pattern_hourglass(n):
+    
+    k = n - 2
+    for i in range(n, -1 , -1):
+        for j in range(k , 0 , -1):
+            print(end=" ")
+        k = k + 1    
+        for j in range(0, i+1):
+            print("* " , end="")
+        print()
+    
+    k = 2 * n  - 2
+    for i in range(0 , n+1):
+        for j in range(0 , k):
+            print(end=" ")
+        k = k - 1
+        for j in range(0, i + 1):
+            print("* ", end="")
+        print()
+ 
+n = int(input("Enter the number of rows : "))
+pattern_hourglass(n)
+
+
+## Output (row = 5)
+#    * * * * * * 
+#     * * * * *
+#      * * * *
+#       * * *
+#        * *
+#         *
+#         *
+#        * *
+#       * * *
+#      * * * *
+#     * * * * *
+#    * * * * * *
 
 
 
