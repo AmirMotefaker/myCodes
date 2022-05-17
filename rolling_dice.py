@@ -47,13 +47,24 @@
 
 ## Rolling the dice(advanced)
 
-from random import randint
+# from random import randint
 
-def roll_dice():
-    print(f"Number is: {randint(1,6)}")
+# def roll_dice():
+#     print(f"Number is: {randint(1,6)}")
 
-roll_dice()   
+# roll_dice()   
 
 # whatever = 12 # Put the number of times you want to simulate here
 # for number in range(whatever):
 #     roll_dice()
+
+
+
+## Rolling the dice(advanced+)
+
+from random import randint
+repeat = True
+while repeat:
+    print("You rolled",randint(1,6))
+    print("Do you want to roll again?")
+    repeat = ("y" or "yes") in input().lower()
