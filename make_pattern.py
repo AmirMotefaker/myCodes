@@ -43,21 +43,21 @@
 
 ### Simple pyramid pattern with 180 degree rotation
 
-def pyr_pat_deg(n):
+# def pyr_pat_deg(n):
      
-    k = 2*n - 2
-    for i in range(0, n):
-        for j in range(0, k):
-            print(end=" ")
+#     k = 2*n - 2       # number of spaces
+#     for i in range(0, n):
+#         for j in range(0, k):
+#             print(end=" ")
      
-        k = k - 2           # decrementing k after each loop
+#         k = k - 2           # decrementing k after each loop
      
-        for j in range(0, i+1):
-            print("* ", end="")
-        print("\r")
+#         for j in range(0, i+1):
+#             print("* ", end="")
+#         print("\r")
  
-n = int(input("Enter the number of rows : "))
-pyr_pat_deg(n)
+# n = int(input("Enter the number of rows : "))
+# pyr_pat_deg(n)
 
 
 ## Output (row = 5)
@@ -66,4 +66,36 @@ pyr_pat_deg(n)
 #     * * *
 #   * * * *
 # * * * * *
+
+
+
+### Simple pyramid pattern Triangle
+
+def triangle(n):
+     
+    k = n - 1       # number of spaces
+ 
+    for i in range(0, n):
+        for j in range(0, k):
+            print(end=" ")
+     
+        k = k - 1
+     
+        for j in range(0, i+1):
+            print("* ", end="")
+     
+        print("\r")
+ 
+n = int(input("Enter the number of rows : "))
+triangle(n)
+
+
+## Output (row = 5)
+#     *
+#    * *
+#   * * *
+#  * * * *
+# * * * * *
+
+
 
