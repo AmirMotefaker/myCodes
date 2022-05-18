@@ -2,14 +2,17 @@
 
 # Currency Converter
 
+
 from forex_python.converter import CurrencyRates
 # forex-python: Forex Python is a Free Foreign exchange rates and currency conversion.
 
 c = CurrencyRates()
+# c.get_rates('USD')
 amount = int(input("Enter the amount: "))
 from_currency = input("From Currency: ").upper()
 to_currency = input("To Currency: ").upper()
-print(from_currency, " To ", to_currency, amount)
+print(amount, "", from_currency, " To ", to_currency, "is:")
 result = c.convert(from_currency, to_currency, amount)
-print(result)
+# print(result)
+print(round(result, 3))
 
