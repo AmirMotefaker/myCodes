@@ -24,8 +24,9 @@
 from googletrans import Translator
 
 translator = Translator()
-result = translator.translate('Mikä on nimesi', src='fi', dest='fr')
+result = translator.translate('ich liebe dich', src='de', dest='fr')
 
 print(result.src)
 print(result.dest)
 print(result.text)
+
