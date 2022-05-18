@@ -42,6 +42,15 @@
 # Button(): It displays buttons on the window.
 # mainloop(): It is useful in running the event loop.
 
+# Story1() function will take the desired input from the user and display it on the screen.text contains the story.
+# Label(): It prints the text in the parentheses on the window.
+# Entry(): It provides a textarea.
+# get(): It helps to get the value of the variable.
+# place(): It sets the position of a text , textarea on the screen.
+
+# Story2() does the same function as Story1(). The only difference is in the story.
+
+
 from tkinter import *
 
 def Story1(win):
@@ -61,13 +70,13 @@ def Story1(win):
   NewScreen = Toplevel(win, bg='Green')
   NewScreen.title("A Memorable Day")
   NewScreen.geometry('500x500')
-  Label(NewScreen, text=' A Memorable Day').place(x=100, y=0)
-  Label(NewScreen, text='Name:').place(x=0, y=35)
-  Label(NewScreen, text='Enter a game:').place(x=0, y=70)
-  Label(NewScreen, text='Enter a city:').place(x=0, y=110)
-  Label(NewScreen, text='Enter the name of a player:').place(x=0, y=150)
-  Label(NewScreen, text='Enter the name of a drink:').place(x=0, y=190)
-  Label(NewScreen, text='Enter the name of a snack:').place(x=0, y=230)
+  Label(NewScreen, text=' A Memorable Day').place(x=100, y=1)
+  Label(NewScreen, text='Name:').place(x=1, y=35)
+  Label(NewScreen, text='Enter a game:').place(x=1, y=70)
+  Label(NewScreen, text='Enter a city:').place(x=1, y=110)
+  Label(NewScreen, text='Enter the name of a player:').place(x=1, y=150)
+  Label(NewScreen, text='Enter the name of a drink:').place(x=1, y=190)
+  Label(NewScreen, text='Enter the name of a snack:').place(x=1, y=230)
   Name = Entry(NewScreen, width=17)
   Name.place(x=250, y=35)
   game = Entry(NewScreen, width=17)
@@ -102,12 +111,12 @@ def Story2(win):
     NewScreen = Toplevel(win, bg='red')
     NewScreen.title("Ambitions")
     NewScreen.geometry('500x500')
-    Label(NewScreen, text='Ambitions').place(x=150, y=0)
-    Label(NewScreen, text='Enter a profession:').place(x=0, y=35)
-    Label(NewScreen, text='Enter a noun:').place(x=0, y=70)
-    Label(NewScreen, text='Enter a feeling:').place(x=0, y=110)
-    Label(NewScreen, text='Enter a emotion:').place(x=0, y=150)
-    Label(NewScreen, text='Enter a verb:').place(x=0, y=190)
+    Label(NewScreen, text='Ambitions').place(x=150, y=1)
+    Label(NewScreen, text='Enter a profession:').place(x=1, y=35)
+    Label(NewScreen, text='Enter a noun:').place(x=1, y=70)
+    Label(NewScreen, text='Enter a feeling:').place(x=1, y=110)
+    Label(NewScreen, text='Enter a emotion:').place(x=1, y=150)
+    Label(NewScreen, text='Enter a verb:').place(x=1, y=190)
     Profession = Entry(NewScreen, width=17)
     Profession.place(x=250, y=35)
     Noun = Entry(NewScreen, width=17)
