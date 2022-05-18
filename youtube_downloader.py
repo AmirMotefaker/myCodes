@@ -92,5 +92,5 @@ def Downloader():
     video = url.streams.first()
     video.download()
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210)  
-Button(root,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = 'pale violet red', padx = 2, command = Downloader).place(x=180 ,y = 150)
+Button(root,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = '#1e81b0', padx = 2, command = Downloader).place(x=180 ,y = 150)
 root.mainloop()
