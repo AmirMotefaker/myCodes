@@ -4,9 +4,9 @@
 
 # Solution 1
 
-from pytube import YouTube
-url = 'https://www.youtube.com/watch?v=wHBBoUtJHhA'
-yt_video = YouTube(url)
+# from pytube import YouTube
+# url = 'https://www.youtube.com/watch?v=wHBBoUtJHhA'
+# yt_video = YouTube(url)
 
 # # here we are fetching a list of all the video resolution
 # videos = yt_video.streams.all()
@@ -26,3 +26,11 @@ yt_video = YouTube(url)
 # YouTube('https://www.youtube.com/watch?v=wHBBoUtJHhA').streams.first().download()
 # yt = YouTube('https://www.youtube.com/watch?v=wHBBoUtJHhA')
   
+
+# Solution 3 
+
+from pytube import YouTube
+
+yt = YouTube('https://www.youtube.com/watch?v=wHBBoUtJHhA')
+yt.streams.get_highest_resolution().download()
+
