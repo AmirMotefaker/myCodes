@@ -29,6 +29,19 @@
 # Solution 2 - advanced(Tkinter)
 # The tkinter package (“Tk interface”) is the standard Python interface to the Tcl/Tk GUI toolkit.
 
+# step-by-step:
+# 1. Install Tkinter
+# 2. Initializing window
+# 3. Creatine functions
+# 4. Creating buttons
+
+# Tk(): It helps in displaying the window on the screen.
+# title(): It displays the title in the parentheses on the top of the window.
+# geometry(): It defines the geometry of the screen.
+# config(): It sets the background colour of the window.
+# Button(): It displays buttons on the window.
+# mainloop(): It is useful in running the event loop.
+
 from tkinter import *
 
 def Story1(win):
