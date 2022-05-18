@@ -29,8 +29,34 @@
 
 # Solution 3 
 
+# from pytube import YouTube
+
+# yt = YouTube('https://www.youtube.com/watch?v=wHBBoUtJHhA')
+# yt.streams.get_highest_resolution().download()
+
+
+
+# Solution 4 - video description
+
+# from pytube import YouTube
+
+# video = YouTube("https://www.youtube.com/watch?v=wHBBoUtJHhA")
+# print (video.description)
+
+
+# Solution 5 - advanced 
+
 from pytube import YouTube
 
-yt = YouTube('https://www.youtube.com/watch?v=wHBBoUtJHhA')
-yt.streams.get_highest_resolution().download()
+def get_stream_for_res(streams, res):
+    stream = list(filter(lambda x: x.resolution == res, streams))
+    return stream
 
+video_url = input("Enter YouTube Video URL: ").strip()
+youtube_obj = YouTube(video_url)
+
+video_res = input(f"Enter YouTube Video Resolution for {youtube_obj.title}: ").strip()
+req_stream_obj = get_stream_for_res(youtube_obj.streams, video_res)[0]
+
+req_stream_obj.download()
+print(f"YouTube Video {youtube_obj.title} Downloaded With Resolution {video_res}")
