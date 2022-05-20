@@ -1,4 +1,6 @@
+# Code by amotef@gmail.com
 
+# Convert Bytes to Kb, MB, GB, TB
 
 # 1000 bytes = 1 KiloBytes(KB)
 # 1000000 bytes =1 megabytes(MB)
