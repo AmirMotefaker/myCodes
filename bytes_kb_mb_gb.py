@@ -1,4 +1,4 @@
-# Code by amotef@gmail.com
+# Code by @AmirMotefaker
 
 # Convert Bytes to Kb, MB, GB, TB
 
