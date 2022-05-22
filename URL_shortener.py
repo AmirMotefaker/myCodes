@@ -1,4 +1,4 @@
-# Code by amotef@gmail.com
+Code by @https://github.com/AmirMotefaker
 
 # URL Shortener
 
