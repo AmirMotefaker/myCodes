@@ -1,4 +1,4 @@
-# Code by amotef@gmail.com
+# Code by @AmirMotefaker
 
 # معمای ریاضیاتی پیدا کردن رمز گاوصندوق
 
