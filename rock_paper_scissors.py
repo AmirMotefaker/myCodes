@@ -1,4 +1,4 @@
-# Code by amotef@gmail.com
+# Code by @AmirMotefaker
 
 # Game Rock(R)-Paper(P)-Scissors(S) ---> RPS
 
