@@ -1,4 +1,4 @@
-# Code by amotef@gmail.com
+# Code by @AmirMotefaker
 
 # Number Guessing
 
@@ -12,7 +12,7 @@ Correct answer: {num}
 ***********
 *********
 *******
-*****
+***** @AmirMotefaker
 *******
 *********
 ***********
