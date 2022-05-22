@@ -1,4 +1,4 @@
-# Code by amotef@gmail.com
+# Code by @AmirMotefaker
 
 # Tic-Tac-Toe Game (advanced)
 
