@@ -1,8 +1,9 @@
 # Code by @AmirMotefaker
 
-# Instagram Bot
+# Instagram Bot (with InstaBot)
 
 # pip install instabot
+# instabot: Instagram bot scripts for promotion and API python wrapper.
 
 
 ## Login
@@ -132,3 +133,4 @@ bot.login(username="your_username",
 # Keep image and program in same folder.
 # -----------------------------------------------------------
 bot.upload_photo("filename.jpg", caption="Write caption here.")
+
