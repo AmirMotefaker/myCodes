@@ -37,7 +37,7 @@
 import cv2
 
 #read image
-img_grey = cv2.imread('image2.png', cv2.IMREAD_GRAYSCALE)
+img_grey = cv2.imread('image.png', cv2.IMREAD_GRAYSCALE)
 
 # define a threshold, 128 is the middle of black and white in grey scale
 thresh = 128
@@ -46,4 +46,4 @@ thresh = 128
 img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
 
 #save image
-cv2.imwrite('image2-binary.png',img_binary) 
+cv2.imwrite('image-binary.png',img_binary) 
