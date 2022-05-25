@@ -18,7 +18,7 @@
 # import cv2
   
 # # read the image file
-# img = cv2.imread('image.png', 2)
+# img = cv2.imread('image2.png', 2)
   
 # ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
   
@@ -34,16 +34,35 @@
 ## Solution 2
 
 ## Convert color image to black and white
-import cv2
+# import cv2
 
-#read image
-img_grey = cv2.imread('image.png', cv2.IMREAD_GRAYSCALE)
+# #read image
+# img_grey = cv2.imread('image2.png', cv2.IMREAD_GRAYSCALE)
 
-# define a threshold, 128 is the middle of black and white in grey scale
-thresh = 128
+# # define a threshold, 128 is the middle of black and white in grey scale
+# thresh = 128
 
-# threshold the image
-img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
+# # threshold the image
+# img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
 
-#save image
-cv2.imwrite('image-binary.png',img_binary) 
+# #save image
+# cv2.imwrite('image2-binary.png',img_binary) 
+
+
+
+## Solution 3
+
+## Convert grey scale image to black and white
+# import cv2
+
+# #read image as grey scale
+# img_grey = cv2.imread('image2-binary.png', cv2.IMREAD_GRAYSCALE)
+
+# # define a threshold, 128 is the middle of black and white in grey scale
+# thresh = 128
+
+# # threshold the image
+# img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
+
+# #save image
+# cv2.imwrite('image2-black-white.png',img_binary) 
