@@ -2,6 +2,8 @@
 
 # Reverse a Number
 
+# Solution 1: Reverse a Number using a while loop
+
 # 1- the remainder of the num divided by 10 is stored in the variable digit.
 #   Now, the digit contains the last digit of num, i.e. 4.
 #   digit is then added to the variable reversed after multiplying it by 10.
@@ -14,12 +16,18 @@
 # 4- After fourth iteration, digit equals 1, reversed equals 432 * 10 + 1 = 4321 and num = 0.
 # 5- Now num = 0, so the test expression num != 0 fails and while loop exits. reversed already contains the reversed number 4321.
 
-num = 1234
-reversed_num = 0
+# num = 1234
+# reversed_num = 0
+#
+# while num != 0:
+#     digit = num % 10
+#     reversed_num = reversed_num * 10 + digit
+#     num //= 10
+#
+# print("Reversed Number: " + str(reversed_num))
 
-while num != 0:
-    digit = num % 10
-    reversed_num = reversed_num * 10 + digit
-    num //= 10
 
-print("Reversed Number: " + str(reversed_num))
+# Solution 2: Reverse a Number Using String slicing
+
+num = 123456789
+print(str(num)[::-1])
