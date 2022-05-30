@@ -4,15 +4,26 @@
 
 # Solution 1 - Using the | Operator
 
+# dict_1 = {1: 'a', 2: 'b'}
+# dict_2 = {2: 'c', 4: 'd'}
+
+# print(dict_1 | dict_2)
+
+
+# # Solution 2 - Using the ** Operator
+
+# dict_1 = {1: 'a', 2: 'b'}
+# dict_2 = {2: 'c', 4: 'd'}
+
+# print({**dict_1, **dict_2})
+
+
+# Solution 3 - Using copy() and update()
+
 dict_1 = {1: 'a', 2: 'b'}
 dict_2 = {2: 'c', 4: 'd'}
 
-print(dict_1 | dict_2)
+dict_3 = dict_2.copy()
+dict_3.update(dict_1)
 
-
-# Solution 2 - Using the ** Operator
-
-dict_1 = {1: 'a', 2: 'b'}
-dict_2 = {2: 'c', 4: 'd'}
-
-print({**dict_1, **dict_2})
+print(dict_3)
