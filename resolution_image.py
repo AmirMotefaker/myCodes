@@ -3,6 +3,7 @@
 # Find the Resolution of a Image
 
 
+# Solution 1 - Using PIL
 import PIL
 from PIL import Image
   
