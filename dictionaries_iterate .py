@@ -10,7 +10,18 @@
 
 
 # Solution 2 - Access both key and value without using items()
+# dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
+
+# for key in dt:
+#     print(key, dt[key])
+
+
+# Solution 3 - Return keys or values explicitly
 dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
 
-for key in dt:
-    print(key, dt[key])
+for key in dt.keys():
+    print(key)
+
+for value in dt.values():
+    print(value)
+    
