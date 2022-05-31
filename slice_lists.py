@@ -22,6 +22,13 @@
 
 
 # Solution 4 - Get all the Items from One Position to Another Position
+# my_list = [1, 2, 3, 4, 5]
+
+# print(my_list[2:4])
+
+
+# Solution 5 - Get the Items at Specified Intervals
 my_list = [1, 2, 3, 4, 5]
 
-print(my_list[2:4])
+print(my_list[::2])
+
