@@ -21,10 +21,17 @@
 
 
 # Solution 3 - Using itertools package
-import itertools
+# import itertools
 
+# my_list = [[1], [2, 3], [4, 5, 6, 7]]
+
+# flat_list = list(itertools.chain(*my_list))
+# print(flat_list)
+
+
+
+# Solution 4 - Using sum()
 my_list = [[1], [2, 3], [4, 5, 6, 7]]
 
-flat_list = list(itertools.chain(*my_list))
+flat_list = sum(my_list, [])
 print(flat_list)
-
