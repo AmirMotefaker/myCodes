@@ -31,7 +31,15 @@
 
 
 # Solution 4 - Using sum()
-my_list = [[1], [2, 3], [4, 5, 6, 7]]
+# my_list = [[1], [2, 3], [4, 5, 6, 7]]
 
-flat_list = sum(my_list, [])
-print(flat_list)
+# flat_list = sum(my_list, [])
+# print(flat_list)
+
+
+
+# Solution 5 - Using lambda and reduce()
+from functools import reduce
+
+my_list = [[1], [2, 3], [4, 5, 6, 7]]
+print(reduce(lambda x, y: x+y, my_list))
