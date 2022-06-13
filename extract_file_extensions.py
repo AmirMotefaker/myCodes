@@ -12,3 +12,11 @@ print(file_details[1])
 # ('file', '.ext')
 # .ext
 
+
+
+# Solution 2 - Using pathlib module
+import pathlib
+print(pathlib.Path('file.ext').suffix)
+
+# output:
+# .ext
