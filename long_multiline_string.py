@@ -8,7 +8,6 @@ learn to program is
 by writing code.'''
 
 print(my_string)
-
 # output:
 # The only way to
 # learn to program is
@@ -28,3 +27,14 @@ print(my_string)
 # by writing code.
 
 
+
+# Solution 3 - Using \
+my_string = "The only way to \n" \
+        	"learn to program is \n" \
+        	"by writing code."
+
+print(my_string)
+# output:
+# The only way to
+# learn to program is
+# by writing code.
