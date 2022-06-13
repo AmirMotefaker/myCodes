@@ -1,6 +1,7 @@
 # Code by @AmirMotefaker
 
 # Append to a File
+
 # my_file.txt:
 # honda 1948
 # mercedes 1926
