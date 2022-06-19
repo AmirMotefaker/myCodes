@@ -13,3 +13,12 @@ print(os.path.splitext(file_name)[0])
 
 # Output:
 # myResume
+
+
+# Solution 2 - Using Path module
+from pathlib import Path
+
+print(Path('myResume.docx').stem)
+
+# Output:
+# myResume
