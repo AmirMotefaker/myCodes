@@ -35,14 +35,15 @@
 
 
 # Solution 2
-user_input = input('Enter your number: ') 
+while True:
+    user_input = input('Enter your number: ') 
 
-result = 0
+    result = 0
 
-for i in user_input: # '1234'
-    result += int(i)
+    for i in user_input: # '1234'
+        result += int(i)
 
-print(result)
+    print(result)
 
 # Output:
 # Enter your number: 1234
