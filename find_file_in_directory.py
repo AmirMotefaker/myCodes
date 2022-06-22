@@ -28,3 +28,19 @@ for file in os.listdir("mydir"):
 # mydir\a.txt
 # mydir\b.txt
 # mydir\c.txt
+
+
+
+# Solution 3 - Using os.walk
+import os
+
+for root, dirs, files in os.walk("mydir"):
+    for file in files:
+        if file.endswith(".txt"):
+            print(file)
+
+
+# Output:
+# a.txt
+# b.txt
+# c.txt
