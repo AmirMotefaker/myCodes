@@ -14,3 +14,12 @@ print(file_len("my_file.txt"))
 # Output:
 # 3
 
+
+
+# Solution 2 - Using list comprehension
+num_of_lines = sum(1 for l in open('my_file.txt'))
+
+print(num_of_lines)
+
+# Output:
+# 3
