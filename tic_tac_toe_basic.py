@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# Tic-Tac-Toe Game (basic)
+# Tic-Tac-Toe Game (Basic)
 
 
 # Step-by-Step
