@@ -16,18 +16,26 @@
 # 4- After fourth iteration, digit equals 1, reversed equals 432 * 10 + 1 = 4321 and num = 0.
 # 5- Now num = 0, so the test expression num != 0 fails and while loop exits. reversed already contains the reversed number 4321.
 
-# num = 1234
-# reversed_num = 0
-#
-# while num != 0:
-#     digit = num % 10
-#     reversed_num = reversed_num * 10 + digit
-#     num //= 10
-#
+num = 1234
+reversed_num = 0
+
+while num != 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num //= 10
+
 # print("Reversed Number: " + str(reversed_num))
+
+
+# Output:
+# Reversed Number: 4321
+
 
 
 # Solution 2: Reverse a Number Using String slicing
 
 num = 123456789
 print(str(num)[::-1])
+
+# Output:
+# 987654321
