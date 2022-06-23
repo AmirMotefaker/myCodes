@@ -30,9 +30,9 @@ pg.display.set_caption("Tic Tac Toe")
 
 # 3. Load and transform images
 #loading the images
-opening = pg.image.load('tic tac opening.png')
-x_img = pg.image.load('x.png')
-o_img = pg.image.load('o.png')
+opening = pg.image.load('tic tac opening.png') # copy tic tac opening.png files to this drirectory
+x_img = pg.image.load('x.png')  # copy x.png files to this drirectory
+o_img = pg.image.load('o.png')  # copy o.png files to this drirectory
 #resizing images
 x_img = pg.transform.scale(x_img, (80,80))
 o_img = pg.transform.scale(o_img, (80,80))
