@@ -16,3 +16,14 @@ print(count)
 
 # Output:
 # 2
+
+
+
+# Solution 2 - Using method count()
+my_string = "amir motefaker"
+my_char = "a"
+
+print(my_string.count(my_char))
+
+# Output:
+# 2
