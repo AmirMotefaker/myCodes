@@ -7,3 +7,12 @@
 # \xE2\x9C\x85 is the utf-8 code for ✅.
 
 print(b'Amir Motefaker \xE2\x9C\x85'.decode("utf-8"))
+
+# Output:
+# Amir Motefaker ✅
+
+
+print(b"Amir Motefaker".decode("utf-8"))
+
+# Output:
+# Amir Motefaker
