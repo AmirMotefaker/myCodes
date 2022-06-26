@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# # Code by @AmirMotefaker
 
 # Guess the word Game
 
@@ -86,7 +86,65 @@
 # # YOU WON!
 
 
-## Step 3
+# ## Step 3
+# list_of_words = ['sun', 'flower', 'son', 'hello', 'hi', 'yesterday', 'tomorrow', 'moon', 'ola', 'paper']
+
+# def get_input():
+#     while True:
+#         user_input = input('Enter your guess: ')  
+#         if user_input.isalpha():
+#             return user_input
+#         print('Your input was not correct. Please enter again.')
+    
+# def print_game_intro():
+#     print('-'*10)
+#     print('Hi, Welcome to the Guess Game. ')
+#     print('All words:', list_of_words)
+#     print('Please start guessing.')
+#     print('-'*10)
+
+
+# def run_game(number_of_rounds):
+#     print_game_intro()
+#     print(f'Number of guessing: {number_of_rounds}')
+#     correct_word = list_of_words[3]
+
+#     for i in range(number_of_rounds):
+#         user_input = get_input()
+
+#         if user_input.lower() == correct_word:
+#             print('YOU WON!')
+#             return
+#         else:
+#             print('Your guessed Wrong!')
+#             print(f'Please try again!, number of rounds left: {(number_of_rounds-1)-i}')
+
+#     print('You lose!')
+
+# run_game(3)
+
+
+# # Output:
+# ----------
+# # Hi, Welcome to the Guess Game.
+# # All words: ['sun', 'flower', 'son', 'hello', 'hi', 'yesterday', 'tomorrow', 'moon', 'ola', 'paper']
+# # Please start guessing.
+# # ----------
+# # Number of guessing: 3
+# # Enter your guess: a
+# # Your guessed Wrong!
+# # Please try again!, number of rounds left: 2
+# # Enter your guess: b
+# # Your guessed Wrong!
+# # Please try again!, number of rounds left: 1
+# # Enter your guess: c
+# # Your guessed Wrong!
+# # Please try again!, number of rounds left: 0
+# # You lose!
+
+
+
+## Step 4
 list_of_words = ['sun', 'flower', 'son', 'hello', 'hi', 'yesterday', 'tomorrow', 'moon', 'ola', 'paper']
 
 def get_input():
@@ -112,6 +170,11 @@ def run_game(number_of_rounds):
     for i in range(number_of_rounds):
         user_input = get_input()
 
+        while user_input.lower() not in list_of_words:
+            print('You should guess a word from the given words list!')
+            print('Please enter a correct word. ')
+            user_input = get_input()
+        
         if user_input.lower() == correct_word:
             print('YOU WON!')
             return
@@ -125,20 +188,29 @@ run_game(3)
 
 
 # Output:
-----------
-# Hi, Welcome to the Guess Game.
+# ----------
+# Hi, Welcome to the Guess Game. 
 # All words: ['sun', 'flower', 'son', 'hello', 'hi', 'yesterday', 'tomorrow', 'moon', 'ola', 'paper']
 # Please start guessing.
 # ----------
 # Number of guessing: 3
-# Enter your guess: a
+# Enter your guess: son
 # Your guessed Wrong!
 # Please try again!, number of rounds left: 2
-# Enter your guess: b
-# Your guessed Wrong!
-# Please try again!, number of rounds left: 1
-# Enter your guess: c
-# Your guessed Wrong!
-# Please try again!, number of rounds left: 0
-# You lose!
+# Enter your guess: dsad
+# You should guess a word from the given words list!
+# Please enter a correct word.
+# Enter your guess: a
+# You should guess a word from the given words list!
+# Please enter a correct word.
+# Enter your guess: sdsada2313
+# Your input was not correct. Please enter again.
+# Enter your guess: dsad
+# You should guess a word from the given words list!
+# Please enter a correct word.
+# Enter your guess: boy
+# You should guess a word from the given words list!
+# Please enter a correct word.
+# Enter your guess: hello
+# YOU WON!
 
