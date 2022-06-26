@@ -2,6 +2,7 @@
 
 # Scope in Python
 
+## Solution 1
 a = 1
 
 def my_function1():
@@ -26,3 +27,27 @@ print(a)
 # 1
 
 
+## Solution  2
+a = 1
+b = 2
+c = 3
+
+def print_abc():
+    a = 55
+    print(a)
+    b = 66
+    print(b)
+
+print(a)
+print(b)
+print_abc()
+print(a)
+print(b)
+
+# Output:
+# 1
+# 2 
+# 55
+# 66
+# 1 
+# 2 
