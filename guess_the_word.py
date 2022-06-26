@@ -216,7 +216,7 @@
 
 
 
-## Step 5
+## Step 5 - FINAL
 import random
 
 def get_input():
@@ -262,7 +262,6 @@ def run_game(number_of_rounds, words):
 
     print('You lose!')
 
-# list_of_words = ['sun', 'flower', 'son', 'hello', 'hi', 'yesterday', 'tomorrow', 'moon', 'ola', 'paper']
 list_of_words = "night knight boy manchester usa war knife foxglove thriftless absurd".split()
 run_game(5, list_of_words)
 
