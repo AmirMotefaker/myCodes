@@ -7,12 +7,12 @@ from tkinter import *
 import datetime
 import time
 import winsound
-# Tkinter module: Helps us to create a window for the user to use the application
-# datetime and time modules: Help us to handle dates and time and manipulate them when needed.
-# winsound module: Helpful to generate sounds for our alarm clock.
+   """ Tkinter module: Helps us to create a window for the user to use the application
+       datetime and time modules: Help us to handle dates and time and manipulate them when needed.
+       winsound module: Helpful to generate sounds for our alarm clock. """
  
-# Creating a function for the alarm
 def Alarm(set_alarm_timer):
+    """ Creating a function for the alarm """
     while True:
         time.sleep(1)
         actual_time = datetime.datetime.now()
@@ -28,7 +28,7 @@ def get_alarm_time():
     alarm_set_time = f"{hour.get()}:{min.get()}:{sec.get()}"
     Alarm(alarm_set_time)
  
-# Creating the Tkinter Window
+   """ Creating the Tkinter Window """
 window = Tk()
 window.title("Alarm Clock -Amir Motefaker-")
 window.geometry("400x160")
