@@ -57,22 +57,44 @@
 
 
 
-# Solution 4 - Diamond
+# # Solution 4 - Diamond
+# def draw_diamond(num):
+#     for i in range(num):
+#         if i < num / 2:
+#             print(i*2 + 1)
+#         else:
+#             print((num-i)*2 - 1)
+
+
+# draw_diamond(7)
+
+# # Output:
+# # 1
+# # 3
+# # 5
+# # 7
+# # 5
+# # 3
+# # 1
+
+
+
+# Solution 5 - Diamond
 def draw_diamond(num):
     for i in range(num):
         if i < num / 2:
-            print(i*2 + 1)
+            print((i*2 + 1) * '*')
         else:
-            print((num-i)*2 - 1)
+            print(((num-i)*2 - 1) * '*')
 
 
 draw_diamond(7)
 
 # Output:
-# 1
-# 3
-# 5
-# 7
-# 5
-# 3
-# 1
+# *
+# ***
+# *****
+# *******
+# *****
+# ***
+# *
