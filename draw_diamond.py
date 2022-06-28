@@ -129,7 +129,37 @@
 
 
 
-# Solution 7 - Diamond
+# # Solution 7 - Diamond
+# def print_star_line(number_of_stars, total_stars):
+#     number_of_spaces = (total_stars - number_of_stars) // 2
+#     print(' ' * number_of_spaces, end='')
+#     print('*' * number_of_stars, end='')
+#     print(' ' * number_of_spaces)
+
+
+# def draw_diamond(num):
+#     print()
+#     for i in range(num):
+#         if i < num / 2:
+#             print_star_line(i*2 + 1, num)
+#         else:
+#             print_star_line((num-i)*2 - 1, num)
+
+
+# draw_diamond(7)
+
+# # Output:
+# #    *   
+# #   ***
+# #  *****
+# # *******
+# #  *****
+# #   ***
+# #    *
+
+
+
+# Solution 8 - Diamond
 def print_star_line(number_of_stars, total_stars):
     number_of_spaces = (total_stars - number_of_stars) // 2
     print(' ' * number_of_spaces, end='')
@@ -139,12 +169,14 @@ def print_star_line(number_of_stars, total_stars):
 
 def draw_diamond(num):
     print()
+    number_of_stars = None
     for i in range(num):
         if i < num / 2:
-            print_star_line(i*2 + 1, num)
+            number_of_stars = i*2 + 1
         else:
-            print_star_line((num-i)*2 - 1, num)
+            number_of_stars = (num-i)*2 - 1
 
+        print_star_line(number_of_stars, num)
 
 draw_diamond(7)
 
