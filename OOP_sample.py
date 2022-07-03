@@ -19,23 +19,40 @@
 # # yellow
 
 
-# Solution 2
+# # Solution 2
+# class Car:
+#     def __init__(self, color, model):  # constructor
+#         self.color = color  # instance attribute
+#         self.model = model
+
+# car1= Car('blue', 'BMW')  # instance
+# car2= Car('yellow', 'AUDI')
+# car3= Car('red', 'BMW')   # instance
+
+# print(car1.color)
+# print(car1.model)
+# print(car2.color)
+# print(car2.model)
+
+# # Output:
+# # blue
+# # BMW
+# # yellow
+# # AUDI
+
+
+# Solution 3
 class Car:
     def __init__(self, color, model):  # constructor
-        self.color = color  # instance attribute
+        self.color = color  
         self.model = model
 
-car1= Car('blue', 'BMW')  # instance
-car2= Car('yellow', 'AUDI')
-car3= Car('red', 'BMW')   # instance
+    def print_details(self):
+        return f'color: {self.color} model: {self.model}'
 
-print(car1.color)
-print(car1.model)
-print(car2.color)
-print(car2.model)
+car1= Car('blue', 'BMW') 
+
+print(car1.print_details())
 
 # Output:
-# blue
-# BMW
-# yellow
-# AUDI
+# color: blue model: BMW
