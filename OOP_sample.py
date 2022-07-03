@@ -187,7 +187,29 @@
 
 
 
-# Solution 10 - Instance Attributes and Class Attributes
+# # Solution 10 - Instance Attributes and Class Attributes
+# class House:
+#     country = 'iran'  # Class Attributes
+
+#     def __init__(self, color, num_of_rooms, a):
+#         self.color = color
+#         self.num_of_rooms = num_of_rooms
+#         self.a = a
+
+#     def house_description(self):
+#         return (self.color, self.num_of_rooms, self.a)
+
+# house1 = House('blue', 4, 100)
+# house1.country = 'USA'   # Instance Attributes
+# house1.color = 'black'
+
+# print(house1.country)
+
+# # Output:
+# # USA
+
+
+# Solution 11 - Instance Attributes and Class Attributes
 class House:
     country = 'iran'  # Class Attributes
 
@@ -200,11 +222,14 @@ class House:
         return (self.color, self.num_of_rooms, self.a)
 
 house1 = House('blue', 4, 100)
-house1.country = 'USA'   # Instance Attributes
-house1.color = 'black'
-
-print(house1.country)
+print(house1.color)
+del house1.color
+print(house1.color)
 
 
 # Output:
-# USA
+# blue
+# Traceback (most recent call last):
+#   File "e:\A.Motefaker\ABC\Python\MyCode\OOP_sample.py", line 227, in <module>
+#     print(house1.color)
+# AttributeError: 'House' object has no attribute 'color'
