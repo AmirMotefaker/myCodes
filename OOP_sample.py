@@ -58,7 +58,30 @@
 # # color: blue model: BMW
 
 
-# Solution 4
+# # Solution 4
+# class Car:
+#     def __init__(self, color, model):  # constructor
+#         self.color = color  
+#         self.model = model
+
+#     def print_details(self):
+#         return f'color: {self.color}, model: {self.model}'
+
+# car1= Car('blue', 'BMW')  
+# car2= Car('yellow', 'AUDI')
+# car3= Car('red', 'BMW')   # 
+
+# print(car1.print_details())
+# print(car2.print_details())
+# print(car3.print_details())
+
+# # Output:
+# # color: blue, model: BMW
+# # color: yellow, model: AUDI
+# # color: red, model: BMW
+
+
+# Solution 5
 class Car:
     def __init__(self, color, model):  # constructor
         self.color = color  
@@ -68,14 +91,9 @@ class Car:
         return f'color: {self.color}, model: {self.model}'
 
 car1= Car('blue', 'BMW')  
-car2= Car('yellow', 'AUDI')
-car3= Car('red', 'BMW')   # 
-
+print(car1.color, car1.model)
 print(car1.print_details())
-print(car2.print_details())
-print(car3.print_details())
 
 # Output:
+# blue BMW
 # color: blue, model: BMW
-# color: yellow, model: AUDI
-# color: red, model: BMW
