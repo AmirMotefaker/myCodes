@@ -136,8 +136,34 @@
 # # 100
 
 
-# Solution 8 - Instance Attributes and Class Attributes
+# # Solution 8 - Instance Attributes and Class Attributes
+# class House:
+#     def __init__(self, color, num_of_rooms, a):
+#         self.color = color
+#         self.num_of_rooms = num_of_rooms
+#         self.a = a
+
+#     def house_description(self):
+#         return (self.color, self.num_of_rooms, self.a)
+
+# house1 = House('blue', 4, 100)
+# john_house = House('yellow', 3, 150)
+
+# # print(house1.color)
+# # print(house1.a)
+# print(house1.house_description())
+
+# # print(john_house.color)
+
+# # Output:
+# # ('blue', 4, 100)
+
+
+
+# Solution 9 - Instance Attributes and Class Attributes
 class House:
+    country = 'iran'  # Class Attributes
+
     def __init__(self, color, num_of_rooms, a):
         self.color = color
         self.num_of_rooms = num_of_rooms
@@ -147,13 +173,14 @@ class House:
         return (self.color, self.num_of_rooms, self.a)
 
 house1 = House('blue', 4, 100)
+house1.color = 'black'
 john_house = House('yellow', 3, 150)
 
-# print(house1.color)
-# print(house1.a)
-print(house1.house_description())
-
-# print(john_house.color)
+print(house1.color)
+print(house1.country)
+print(john_house.country)
 
 # Output:
-# ('blue', 4, 100)
+# black
+# iran
+# iran
