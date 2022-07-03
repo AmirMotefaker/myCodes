@@ -99,20 +99,38 @@
 # # color: blue, model: BMW
 
 
-# Solution 6 - self
-class Car:
-    def __init__(self, color, model):  # constructor
-        self.color = color  
-        self.model = model
+# # Solution 6 - self
+# class Car:
+#     def __init__(self, color, model):  # constructor
+#         self.color = color  
+#         self.model = model
 
-    def print_details(self, a):
-        return f'color: {self.color}, model: {self.model} {a}'
+#     def print_details(self, a):
+#         return f'color: {self.color}, model: {self.model} {a}'
 
 
-car1 = Car('blue', 'BMW')  
-print(car1.print_details(20))
-print(Car.print_details(car1, 20))
+# car1 = Car('blue', 'BMW')  
+# print(car1.print_details(20))
+# print(Car.print_details(car1, 20))
+
+# # Output:
+# # color: blue, model: BMW 20
+# # color: blue, model: BMW 20
+
+
+
+# Solution 7 - Instance Attributes and Class Attributes
+class House:
+    def __init__(self, color, num_of_rooms, a):
+        self.color = color
+        self.num_of_rooms = num_of_rooms
+        self.a = a
+
+house1 = House('blue', 4, 100)
+
+print(house1.color)
+print(house1.a)
 
 # Output:
-# color: blue, model: BMW 20
-# color: blue, model: BMW 20
+# blue
+# 100
