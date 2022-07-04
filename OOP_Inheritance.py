@@ -24,32 +24,52 @@
 
 
 
-# Solution 2
-class Student:
-    def __init__(self, firstname, lastname, major, uni):
+# # Solution 2
+# class Student:
+#     def __init__(self, firstname, lastname, major, uni):
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.major = major
+#         self.university = uni
+
+#     def who_am_i(self):
+#         return f'{self.firstname} {self.lastname}'
+
+# class Teacher:
+#     def __init__(self, firstname, lastname, department, uni):
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.department = department
+#         self.university = uni
+
+#     def who_am_i(self):
+#         return f'{self.firstname} {self.lastname}. I am a teacher at {self.university} university.'
+
+
+# john = Teacher('john', 'doe', 'math', 'MIT')
+# print(john.who_am_i())
+
+# # Output:
+# # john doe. I am a teacher at MIT university.
+
+
+
+# Solution 3
+class Person:
+    def __init__(self, firstname, lastname):
         self.firstname = firstname
         self.lastname = lastname
-        self.major = major
-        self.university = uni
 
-    def who_am_i(self):
-        return f'{self.firstname} {self.lastname}'
+    def fullname(self): # title(): john -> John
+        return self.firstname.title() + ' ' + self.lastname.title()
 
-class Teacher:
-    def __init__(self, firstname, lastname, department, uni):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.department = department
-        self.university = uni
-
-    def who_am_i(self):
-        return f'{self.firstname} {self.lastname}. I am a teacher at {self.university} university.'
+class Student(Person): # Inheritance
+    pass
 
 
-john = Teacher('john', 'doe', 'math', 'MIT')
-print(john.who_am_i())
+ali_stu = Student('ali', 'alavi')
+print(ali_stu.fullname())
 
 
 # Output:
-# john doe. I am a teacher at MIT university.
-
+# Ali Alavi
