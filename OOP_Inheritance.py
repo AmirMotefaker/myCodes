@@ -2,22 +2,54 @@
 
 # OOP - Inheritance 
 
+# # Solution 1
+# class Student:
+#     def __init__(self, firstname, lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+
+#     def who_am_i(self):
+#         return f'{self.firstname} {self.lastname}'
+
+
+# john_stu = Student('john', 'doe')
+# david_stu = Student('david', 'stuart')
+
+# print(john_stu.who_am_i())
+# print(david_stu.who_am_i())
+
+# # Output:
+# # john doe
+# # david stuart
+
+
+
+# Solution 2
 class Student:
-    def __init__(self, firstname, lastname):
+    def __init__(self, firstname, lastname, major, uni):
         self.firstname = firstname
         self.lastname = lastname
+        self.major = major
+        self.university = uni
 
     def who_am_i(self):
         return f'{self.firstname} {self.lastname}'
 
+class Teacher:
+    def __init__(self, firstname, lastname, department, uni):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.department = department
+        self.university = uni
 
-john_stu = Student('john', 'doe')
-david_stu = Student('david', 'stuart')
+    def who_am_i(self):
+        return f'{self.firstname} {self.lastname}. I am a teacher at {self.university} university.'
 
-print(john_stu.who_am_i())
-print(david_stu.who_am_i())
+
+john = Teacher('john', 'doe', 'math', 'MIT')
+print(john.who_am_i())
+
 
 # Output:
-# john doe
-# david stuart
+# john doe. I am a teacher at MIT university.
 
