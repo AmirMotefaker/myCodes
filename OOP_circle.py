@@ -2,6 +2,34 @@
 
 # OOP - Circle
 
+# # Solution 1
+# class Circle:
+#     pi = 3.14  # Class Attribute
+
+#     def __init__(self, r):
+#         self.r = r
+
+#     def calc_diameter(self):
+#         return self.r * 2
+
+# circle1 = Circle(10)
+# circle2 = Circle(20)
+
+# print(circle1.pi)
+# print(circle1.r)
+# print(circle2.r)
+
+# print(circle1.calc_diameter())
+
+# # Output:
+# # 3.14
+# # 10
+# # 20
+# # 20
+
+
+
+# Solution 2 - Area
 class Circle:
     pi = 3.14  # Class Attribute
 
@@ -11,19 +39,15 @@ class Circle:
     def calc_diameter(self):
         return self.r * 2
 
-circle1 = Circle(10)
-circle2 = Circle(20)
+    def calc_area(self):
+        # pi * (r ** 2)
+        return self.pi * (self.r ** 2)
 
-print(circle1.pi)
-print(circle1.r)
-print(circle2.r)
+circle1 = Circle(14)
 
 print(circle1.calc_diameter())
+print(circle1.calc_area())
 
 # Output:
-# 3.14
-# 10
-# 20
-# 20
-
-
+# 28
+# 615.44
