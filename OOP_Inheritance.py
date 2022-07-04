@@ -54,7 +54,28 @@
 
 
 
-# Solution 3
+# # Solution 3
+# class Person:
+#     def __init__(self, firstname, lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+
+#     def fullname(self): # title(): john -> John
+#         return self.firstname.title() + ' ' + self.lastname.title()
+
+# class Student(Person): # Inheritance
+#     pass
+
+
+# ali_stu = Student('ali', 'alavi')
+# print(ali_stu.fullname())
+
+# # Output:
+# # Ali Alavi
+
+
+
+# Solution 4
 class Person:
     def __init__(self, firstname, lastname):
         self.firstname = firstname
@@ -64,12 +85,13 @@ class Person:
         return self.firstname.title() + ' ' + self.lastname.title()
 
 class Student(Person): # Inheritance
-    pass
+    def __init__(self, firstname, lastname, major):
+        Person.__init__(self, firstname, lastname)
+        self.major = major
 
 
-ali_stu = Student('ali', 'alavi')
+ali_stu = Student('ali', 'alavi', 'Computer Engineering')
 print(ali_stu.fullname())
-
 
 # Output:
 # Ali Alavi
