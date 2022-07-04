@@ -98,7 +98,31 @@
 
 
 
-# Solution 5
+# # Solution 5
+# class Person:
+#     def __init__(self, firstname, lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+
+#     def fullname(self): # title(): john -> John
+#         return self.firstname.title() + ' ' + self.lastname.title()
+
+# class Student(Person): # Inheritance
+#     def __init__(self, firstname, lastname, major):
+#         #Person.__init__(self, firstname, lastname)
+#         super().__init__(firstname, lastname)
+#         self.major = major
+
+  
+# ali_stu = Student('ali', 'alavi', 'Computer Engineering')
+# print(ali_stu.fullname())
+
+# # Output:
+# # Ali Alavi
+
+
+
+# Solution 6
 class Person:
     def __init__(self, firstname, lastname):
         self.firstname = firstname
@@ -109,13 +133,15 @@ class Person:
 
 class Student(Person): # Inheritance
     def __init__(self, firstname, lastname, major):
-        #Person.__init__(self, firstname, lastname)
         super().__init__(firstname, lastname)
         self.major = major
 
-  
+    def fullname(self):
+        return f'{self.firstname} {self.lastname}. I am studying in {self.major}.'
+
+
 ali_stu = Student('ali', 'alavi', 'Computer Engineering')
 print(ali_stu.fullname())
 
 # Output:
-# Ali Alavi
+# ali alavi. I am studying in Computer Engineering.
