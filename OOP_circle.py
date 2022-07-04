@@ -85,7 +85,33 @@
 # # 87.92
 
 
-# Solution 4 - Area and circumference
+# # Solution 4 - Area and circumference
+# class Circle:
+#     pi = 3.14  # Class Attribute
+
+#     def __init__(self, r):
+#         self.r = r
+
+#     def calc_diameter(self):
+#         return self.r * 2
+
+#     def calc_area(self):
+#         return self.pi * (self.r ** 2)
+
+#     def calc_circumference(self):
+#         return 2 * Circle.pi * self.r 
+
+# circle1 = Circle(10)
+# print(circle1.calc_area())
+# circle1.pi = 3.1415
+# print(circle1.calc_area())
+
+# # Output:
+# # 314.0
+# # 314.15000000000003
+
+
+# Solution 5 - Area and circumference
 class Circle:
     pi = 3.14  # Class Attribute
 
@@ -96,16 +122,16 @@ class Circle:
         return self.r * 2
 
     def calc_area(self):
-        return self.pi * (self.r ** 2)
+        return Circle.pi * (self.r ** 2)
 
     def calc_circumference(self):
         return 2 * Circle.pi * self.r 
 
 circle1 = Circle(10)
 print(circle1.calc_area())
-circle1.pi = 3.1415
+circle1.pi = 3.14159265359
 print(circle1.calc_area())
 
 # Output:
 # 314.0
-# 314.15000000000003
+# 314.0
