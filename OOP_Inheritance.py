@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code b @AmirMotefaker
 
 # OOP - Inheritance 
 
@@ -75,7 +75,30 @@
 
 
 
-# Solution 4
+# # Solution 4
+# class Person:
+#     def __init__(self, firstname, lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+
+#     def fullname(self): # title(): john -> John
+#         return self.firstname.title() + ' ' + self.lastname.title()
+
+# class Student(Person): # Inheritance
+#     def __init__(self, firstname, lastname, major):
+#         Person.__init__(self, firstname, lastname)
+#         self.major = major
+
+
+# ali_stu = Student('ali', 'alavi', 'Computer Engineering')
+# print(ali_stu.fullname())
+
+# # Output:
+# # Ali Alavi
+
+
+
+# Solution 5
 class Person:
     def __init__(self, firstname, lastname):
         self.firstname = firstname
@@ -86,10 +109,11 @@ class Person:
 
 class Student(Person): # Inheritance
     def __init__(self, firstname, lastname, major):
-        Person.__init__(self, firstname, lastname)
+        #Person.__init__(self, firstname, lastname)
+        super().__init__(firstname, lastname)
         self.major = major
 
-
+  
 ali_stu = Student('ali', 'alavi', 'Computer Engineering')
 print(ali_stu.fullname())
 
