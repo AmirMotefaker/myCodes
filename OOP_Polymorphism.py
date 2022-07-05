@@ -68,9 +68,6 @@
 
 
 # Solution 3 - Area(Square, Circle)
-from matplotlib.pyplot import show
-
-
 class Shape:  #  Abstract Class
     def __init__(self, kind, name):
         self.kind = kind
