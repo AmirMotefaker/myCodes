@@ -24,12 +24,45 @@
 
 
 
-# Solution 2
+# # Solution 2
+# import os
+# os.system('cls')
+
+# class Time:
+#     def __init__(self, hours, minutes, seconds):
+#         self.hours = hours
+#         self.minutes = minutes
+#         self.seconds = seconds
+
+#     def __str__(self):
+#         return f'{self.hours:02}:{self.minutes:02}:{self.seconds:02}'
+    
+# time1 = Time(17, 5, 42)
+# gym_time = Time(23, 1, 4)
+
+# print(time1)
+# print(gym_time)
+
+
+# # Output:
+# # 17:05:42
+# # 23:01:04
+
+
+
+# Solution 3
 import os
 os.system('cls')
 
 class Time:
     def __init__(self, hours, minutes, seconds):
+        if hours > 24:
+            raise ValueError('Hours number should be less than 23.')
+        if minutes > 59:
+            raise ValueError('Minutes number should be less than 60.')
+        if seconds > 59:
+            raise ValueError('Seconds number should be less than 60.')
+
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
@@ -43,7 +76,14 @@ gym_time = Time(23, 1, 4)
 print(time1)
 print(gym_time)
 
+time2 = Time(23, 79, 20)
 
-# Output:
+# Output
 # 17:05:42
 # 23:01:04
+# Traceback (most recent call last):
+#   File "e:\A.Motefaker\ABC\Python\MyCode\OOP_time.py", line 79, in <module>
+#     time2 = Time(23, 79, 20)
+#   File "e:\A.Motefaker\ABC\Python\MyCode\OOP_time.py", line 62, in __init__
+#     raise ValueError('Minutes number should be less than 60.')
+# ValueError: Minutes number should be less than 60.
