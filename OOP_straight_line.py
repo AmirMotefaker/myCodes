@@ -42,7 +42,33 @@
 
 
 
-# Solution 3 - with length
+# # Solution 3 - with length
+# class Line:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+     
+#     def __str__(self):
+#         return f'Line: a=({self.a[0]},{self.a[1]}) b=({self.b[0]},{self.b[1]})'
+
+#     def length(self):
+#         return ((self.b[1] - self.a[1]) ** 2 + (self.b[0] - self.a[0]) ** 2) ** 0.5
+
+
+# line1 = Line((0,0), (3,3))
+
+# print(line1.length())
+
+# # for Test
+# print(18 ** 0.5)
+
+# # Output:
+# # 4.242640687119285
+# # 4.242640687119285
+
+
+
+# Solution 4 - Slope(shib)
 class Line:
     def __init__(self, a, b):
         self.a = a
@@ -54,14 +80,14 @@ class Line:
     def length(self):
         return ((self.b[1] - self.a[1]) ** 2 + (self.b[0] - self.a[0]) ** 2) ** 0.5
 
+    def slope(self):
+        return (self.b[1] - self.a[1]) / (self.b[0] - self.a[0])
 
 line1 = Line((0,0), (3,3))
 
 print(line1.length())
-
-# for Test
-print(18 ** 0.5)
+print(line1.slope())
 
 # Output:
 # 4.242640687119285
-# 4.242640687119285
+# 1.0
