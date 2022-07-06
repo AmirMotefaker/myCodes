@@ -68,20 +68,46 @@
 
 
 
-# Solution 4 - Slope(shib)
+# # Solution 4 - Slope(shib)
+# class Line:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+     
+#     def __str__(self):
+#         return f'Line: a=({self.a[0]},{self.a[1]}) b=({self.b[0]},{self.b[1]})'
+
+#     def length(self):
+#         return ((self.b[1] - self.a[1]) ** 2 + (self.b[0] - self.a[0]) ** 2) ** 0.5
+
+#     def slope(self):
+#         return (self.b[1] - self.a[1]) / (self.b[0] - self.a[0])
+
+# line1 = Line((0,0), (3,3))
+
+# print(line1.length())
+# print(line1.slope())
+
+# # Output:
+# # 4.242640687119285
+# # 1.0
+
+
+
+# Solution 5 - Slope
 class Line:
     def __init__(self, a, b):
-        self.a = a
-        self.b = b
+        self.a = {'x': a[0], 'y': a[1]}
+        self.b = {'x': b[0], 'y': b[1]}
      
     def __str__(self):
-        return f'Line: a=({self.a[0]},{self.a[1]}) b=({self.b[0]},{self.b[1]})'
+        return f"Line: a=({self.a['x']},{self.a['y']}) b=({self.b['x']},{self.b['y']})"
 
     def length(self):
-        return ((self.b[1] - self.a[1]) ** 2 + (self.b[0] - self.a[0]) ** 2) ** 0.5
+        return ((self.b['y'] - self.a['y']) ** 2 + (self.b['x'] - self.a['x']) ** 2) ** 0.5
 
     def slope(self):
-        return (self.b[1] - self.a[1]) / (self.b[0] - self.a[0])
+        return (self.b['y'] - self.a['y']) / (self.b['x'] - self.a['x'])
 
 line1 = Line((0,0), (3,3))
 
