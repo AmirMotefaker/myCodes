@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# Countdown Timer
+# Countdown Timer - Basic
 
 import time
 
