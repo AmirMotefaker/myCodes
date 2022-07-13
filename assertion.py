@@ -2,7 +2,34 @@
 
 # Assert Keyword - Assertion
 
-# Solution 1
+# # Solution 1
+# def calc_income(income):
+#     # if income < 0:
+#     #     raise Exception('Income should not be a negative number!')
+
+#     assert income>=0, 'Income should not be a negative number!'
+
+#     print('first')    
+#     return income * 2
+
+# user_income = int(input('Enter your income: '))
+
+# try:
+#     print(calc_income(user_income))
+# except:
+#     print('EXCEPTION')
+
+# print('second')
+
+# # Output:
+# # Enter your income: 100
+# # first 
+# # 200   
+# # second
+
+
+
+# Solution 2
 def calc_income(income):
     # if income < 0:
     #     raise Exception('Income should not be a negative number!')
@@ -14,15 +41,18 @@ def calc_income(income):
 
 user_income = int(input('Enter your income: '))
 
-try:
-    print(calc_income(user_income))
-except:
-    print('EXCEPTION')
+#try:
+print(calc_income(user_income))
+#except:
+#     print('EXCEPTION')
 
-print('second')
+# print('second')
 
 # Output:
-# Enter your income: 100
-# first 
-# 200   
-# second
+# Enter your income: -10
+# Traceback (most recent call last):
+#   File "e:\A.Motefaker\ABC\Python\MyCode\assertion.py", line 45, in <module>
+#     print(calc_income(user_income))
+#   File "e:\A.Motefaker\ABC\Python\MyCode\assertion.py", line 37, in calc_income
+#     assert income>=0, 'Income should not be a negative number!'
+# AssertionError: Income should not be a negative number!
