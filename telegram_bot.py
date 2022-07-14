@@ -2,9 +2,6 @@
 
 # Telegram Bot
 
-# pip install python-telegram-bot
-
-
 from telegram.ext.updater import Updater
 from telegram.update import Update
 from telegram.ext.callbackcontext import CallbackContext
