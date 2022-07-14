@@ -1,15 +1,15 @@
-# Code by @AmirMotefaker
+Code by @AmirMotefaker
 
 # Handling Exceptions - finally - else
 
 # # Solution 1
-# a = 10
-# b = int(input('Enter a number: '))
+a = 10
+b = int(input('Enter a number: '))
 
-# try:
-#     print( a / b)
-# except ZeroDivisionError:
-#     print('EXCEPTION')
+try:
+    print( a / b)
+except ZeroDivisionError:
+    print('EXCEPTION')
 
 
 # # Output:
@@ -19,21 +19,21 @@
 
 
 # # Solution 2
-# a = 10
-# b = int(input('Enter a number: '))
+a = 10
+b = int(input('Enter a number: '))
 
-# try: # try to run this code
-#     print( a / b)
-# except ZeroDivisionError:
-#     print('EXCEPTION')
-# except ModuleNotFoundError:
-#     print('another exception')
-# except Exception:
-#     print('some other error')
-# else: # if there is no error
-#     print('ELSE')
+try: # try to run this code
+    print( a / b)
+except ZeroDivisionError:
+    print('EXCEPTION')
+except ModuleNotFoundError:
+    print('another exception')
+except Exception:
+    print('some other error')
+else: # if there is no error
+    print('ELSE')
 
-# print('END')
+print('END')
 
 # # OutPut:
 # # Enter a number: 0
@@ -47,21 +47,21 @@
 
 
 # # Solution 3
-# a = 10
-# b = int(input('Enter a number: '))
+a = 10
+b = int(input('Enter a number: '))
 
-# try: # try to run this code
-#     b = c + 10
-# except ZeroDivisionError:
-#     print('EXCEPTION')
-# except ModuleNotFoundError:
-#     print('another exception')
-# except Exception:
-#     print('some other error')
-# else: # if there is no error
-#     print('ELSE')
+try: # try to run this code
+    b = c + 10
+except ZeroDivisionError:
+    print('EXCEPTION')
+except ModuleNotFoundError:
+    print('another exception')
+except Exception:
+    print('some other error')
+else: # if there is no error
+    print('ELSE')
 
-# print('END')
+print('END')
 
 # # Output:
 # # nter a number: 10
@@ -71,19 +71,19 @@
 
 
 # # Solution 4
-# a = 10
-# b = int(input('Enter a number: '))
+a = 10
+b = int(input('Enter a number: '))
 
-# try: # try to run this code
-#     b = c + 10
-# except ZeroDivisionError:
-#     print('EXCEPTION')
-# except ModuleNotFoundError:
-#     print('another exception')
-# else: # if there is no error
-#     print('ELSE')
+try: # try to run this code
+    b = c + 10
+except ZeroDivisionError:
+    print('EXCEPTION')
+except ModuleNotFoundError:
+    print('another exception')
+else: # if there is no error
+    print('ELSE')
 
-# print('END')
+print('END')
 
 # # Output:
 # # Enter a number: 10
@@ -95,19 +95,19 @@
 
 
 # # Solution 5 - finally
-# a = 10
-# b = int(input('Enter a number: '))
+a = 10
+b = int(input('Enter a number: '))
 
-# try: 
-#     b = c + 10
-# except ZeroDivisionError:
-#     print('EXCEPTION')
-# else: 
-#     print('ELSE')
-# finally:
-#     print('FINALLY')
+try: 
+    b = c + 10
+except ZeroDivisionError:
+    print('EXCEPTION')
+else: 
+    print('ELSE')
+finally:
+    print('FINALLY')
 
-# print('END')
+print('END')
 
 # # Output:
 # # Enter a number: 10
