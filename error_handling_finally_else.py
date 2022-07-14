@@ -46,7 +46,31 @@
 # # END
 
 
-# Solution 3
+# # Solution 3
+# a = 10
+# b = int(input('Enter a number: '))
+
+# try: # try to run this code
+#     b = c + 10
+# except ZeroDivisionError:
+#     print('EXCEPTION')
+# except ModuleNotFoundError:
+#     print('another exception')
+# except Exception:
+#     print('some other error')
+# else: # if there is no error
+#     print('ELSE')
+
+# print('END')
+
+# # Output:
+# # nter a number: 10
+# # some other error
+# # END
+
+
+
+# Solution 4
 a = 10
 b = int(input('Enter a number: '))
 
@@ -56,14 +80,14 @@ except ZeroDivisionError:
     print('EXCEPTION')
 except ModuleNotFoundError:
     print('another exception')
-except Exception:
-    print('some other error')
 else: # if there is no error
     print('ELSE')
 
 print('END')
 
 # Output:
-# nter a number: 10
-# some other error
-# END
+# Enter a number: 10
+# Traceback (most recent call last):
+#   File "e:\A.Motefaker\ABC\Python\MyCode\error_handling_finally_else.py", line 78, in <module>
+#     b = c + 10
+# NameError: name 'c' is not defined
