@@ -94,12 +94,38 @@
 
 
 
-# Solution 5 - finally
+# # Solution 5 - finally
+# a = 10
+# b = int(input('Enter a number: '))
+
+# try: 
+#     b = c + 10
+# except ZeroDivisionError:
+#     print('EXCEPTION')
+# else: 
+#     print('ELSE')
+# finally:
+#     print('FINALLY')
+
+# print('END')
+
+# # Output:
+# # Enter a number: 10
+# # FINALLY
+# # Traceback (most recent call last):
+# #   File "e:\A.Motefaker\ABC\Python\MyCode\error_handling_finally_else.py", line 102, in <module>
+# #     b = c + 10
+# # NameError: name 'c' is not defined
+
+
+
+# Solution 6 - else- finally
 a = 10
 b = int(input('Enter a number: '))
 
 try: 
-    b = c + 10
+    a = 100
+    #b = c + 10
 except ZeroDivisionError:
     print('EXCEPTION')
 else: 
@@ -111,8 +137,6 @@ print('END')
 
 # Output:
 # Enter a number: 10
+# ELSE
 # FINALLY
-# Traceback (most recent call last):
-#   File "e:\A.Motefaker\ABC\Python\MyCode\error_handling_finally_else.py", line 102, in <module>
-#     b = c + 10
-# NameError: name 'c' is not defined
+# END
