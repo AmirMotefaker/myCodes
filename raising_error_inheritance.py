@@ -3,18 +3,18 @@
 # Raising Error Inheritance
 
 # # Solution 1
-# class NegativeIncomeError(Exception):
-#     pass
+class NegativeIncomeError(Exception):
+    pass
 
-# def check_income(num):
-#     if num < 0:
-#         raise NegativeIncomeError
+def check_income(num):
+    if num < 0:
+        raise NegativeIncomeError
 
-#     return num
+    return num
 
-# user_income = int(input('Enter your income: '))
+user_income = int(input('Enter your income: '))
 
-# check_income(user_income)
+check_income(user_income)
 
 # # Output:
 # # Enter your income: -10
@@ -28,29 +28,29 @@
 
 
 # # Solution 2
-# class NegativeIncomeError(Exception):
-#     pass
+class NegativeIncomeError(Exception):
+    pass
 
-# class NegativeAgeError(Exception):
-#     pass
+class NegativeAgeError(Exception):
+    pass
 
-# def check_age(age):
-#     if age < 0:
-#         raise NegativeAgeError('Your age con not be Negative.')
+def check_age(age):
+    if age < 0:
+        raise NegativeAgeError('Your age con not be Negative.')
 
-#     return age * 2
+    return age * 2
 
 
-# def check_income(num):
-#     if num < 0:
-#         raise NegativeIncomeError
+def check_income(num):
+    if num < 0:
+        raise NegativeIncomeError
 
-#     return num
+    return num
 
-# #user_income = int(input('Enter your income: '))
-# user_age = int(input('Enter your age: '))
+#user_income = int(input('Enter your income: '))
+user_age = int(input('Enter your age: '))
 
-# check_income(user_age)
+check_income(user_age)
 
 # # Output:
 # # Enter your age: -10
