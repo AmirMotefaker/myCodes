@@ -70,24 +70,49 @@
 
 
 
-# Solution 4
+# # Solution 4
+# a = 10
+# b = int(input('Enter a number: '))
+
+# try: # try to run this code
+#     b = c + 10
+# except ZeroDivisionError:
+#     print('EXCEPTION')
+# except ModuleNotFoundError:
+#     print('another exception')
+# else: # if there is no error
+#     print('ELSE')
+
+# print('END')
+
+# # Output:
+# # Enter a number: 10
+# # Traceback (most recent call last):
+# #   File "e:\A.Motefaker\ABC\Python\MyCode\error_handling_finally_else.py", line 78, in <module>
+# #     b = c + 10
+# # NameError: name 'c' is not defined
+
+
+
+# Solution 5 - finally
 a = 10
 b = int(input('Enter a number: '))
 
-try: # try to run this code
+try: 
     b = c + 10
 except ZeroDivisionError:
     print('EXCEPTION')
-except ModuleNotFoundError:
-    print('another exception')
-else: # if there is no error
+else: 
     print('ELSE')
+finally:
+    print('FINALLY')
 
 print('END')
 
 # Output:
 # Enter a number: 10
+# FINALLY
 # Traceback (most recent call last):
-#   File "e:\A.Motefaker\ABC\Python\MyCode\error_handling_finally_else.py", line 78, in <module>
+#   File "e:\A.Motefaker\ABC\Python\MyCode\error_handling_finally_else.py", line 102, in <module>
 #     b = c + 10
 # NameError: name 'c' is not defined
