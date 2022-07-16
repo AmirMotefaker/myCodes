@@ -39,27 +39,56 @@
 
 
 
-# Solution 4 - read
-f = open('names.txt', 'w')
+# # Solution 4 - read
+# f = open('names.txt', 'w')
 
-f.write('john\n')
-f.write('zahra')
-f.write('\nbaran')
-f.write('\nali')
-f.write('\nhamed')
-f.write('\ndavid')
+# f.write('john\n')
+# f.write('zahra')
+# f.write('\nbaran')
+# f.write('\nali')
+# f.write('\nhamed')
+# f.write('\ndavid')
 
 
+# f = open('names.txt', 'r')
+
+# a= f.read()
+
+# print(type(a))
+# print(a)
+
+
+# # Output:
+# # <class 'str'>
+# # john
+# # zahra
+# # baran
+# # ali
+# # hamed
+# # david
+
+
+
+# # Solution 5 - .split
+# f = open('names.txt', 'r')
+
+# a = f.read()
+
+# print(a.split('\n'))
+
+# # Output:
+# # ['john', 'zahra', 'baran', 'ali', 'hamed', 'david']
+
+
+# Solution 6 - .split
 f = open('names.txt', 'r')
 
-a= f.read()
+a = f.read()
 
-print(type(a))
-print(a)
-
+for line in a.split('\n'):
+    print(line)
 
 # Output:
-# <class 'str'>
 # john
 # zahra
 # baran
