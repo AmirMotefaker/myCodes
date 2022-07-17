@@ -3,13 +3,13 @@
 # Working with files - name list
 
 # # Solution 1
-# names_file = open('names.txt', 'r')
+names_file = open('names.txt', 'r')
 
-# names = names_file.read()
+names = names_file.read()
 
-# names = names.split('\n')
+names = names.split('\n')
 
-# print(names)
+print(names)
 
 # # Output:
 # # ['john', 'zahra', 'baran', 'ali', 'hamed', 'david']
@@ -17,20 +17,20 @@
 
 
 # # Solution 2
-# names_file = open('names.txt', 'r')
+names_file = open('names.txt', 'r')
 
-# names = names_file.read()
+names = names_file.read()
 
-# names = names.split('\n')
+names = names.split('\n')
 
-# print(names)
+print(names)
 
-# while True:
-#     user_input = input('Enter name: ')
-#     if user_input == 'exit':
-#         break
-#     names.append(user_input)
-#     print(names)
+while True:
+    user_input = input('Enter name: ')
+    if user_input == 'exit':
+        break
+    names.append(user_input)
+    print(names)
 
 # # Output:
 # # ['john', 'zahra', 'baran', 'ali', 'hamed', 'david']
@@ -43,11 +43,11 @@
 
 
 # # Solution 3 - reader
-# with open('names.txt', 'r') as reader:
-#     print(reader.read())
-#     print('in hear')
+with open('names.txt', 'r') as reader:
+    print(reader.read())
+    print('in hear')
 
-# print('END')
+print('END')
 
 # # Output:
 # # john
@@ -61,7 +61,7 @@
 
 
 
-# Solution 4 - reader.read()
+# Solution 4 - with - reader.read()
 names = []
 
 with open('names.txt', 'r') as reader:
