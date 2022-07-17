@@ -3,11 +3,11 @@
 # Working with files - Storage of grades and GPA
 
 # # Solution 1
-# print('--- Current grades: ---')
+print('--- Current grades: ---')
 
-# with open('grades.txt', 'r') as reader:
-#     all_data = reader.read()
-#     print(all_data)
+with open('grades.txt', 'r') as reader:
+    all_data = reader.read()
+    print(all_data)
 
 # # Output:
 # # --- Current grades: ---
@@ -33,33 +33,33 @@ with open('grades.txt', 'r') as reader:
 
 
 # # Solution 3
-# print('--- Current grades: ---')
+print('--- Current grades: ---')
 
-# with open('grades.txt', 'r') as reader:
-#     all_data = reader.read()
-#     print(all_data)
+with open('grades.txt', 'r') as reader:
+    all_data = reader.read()
+    print(all_data)
 
 
-# new_grades = []
+new_grades = []
 
-# yes_no_new_grades = input('Do you want to add new grades? ')
+yes_no_new_grades = input('Do you want to add new grades? ')
 
-# if yes_no_new_grades == 'yes':
-#     while True:
-#         name = input('Enter name: ')
+if yes_no_new_grades == 'yes':
+    while True:
+        name = input('Enter name: ')
         
-#         if name == 'exit':
-#             break
+        if name == 'exit':
+            break
 
-#         grade = input('Enter grade: ')
-#         new_grades.append({
-#             'name': name,
-#             'grade': grade
-#         })
+        grade = input('Enter grade: ')
+        new_grades.append({
+            'name': name,
+            'grade': grade
+        })
 
-# with open('grades.txt', 'a') as grades_file:
-#     for student_grade in new_grades:
-#         grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
+with open('grades.txt', 'a') as grades_file:
+    for student_grade in new_grades:
+        grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
 
 # # Output
 # # --- Current grades: ---
@@ -76,37 +76,37 @@ with open('grades.txt', 'r') as reader:
 
 
 # # Solution 4
-# new_grades = []
+new_grades = []
 
-# yes_no_new_grades = input('Do you want to add new grades? ')
+yes_no_new_grades = input('Do you want to add new grades? ')
 
-# if yes_no_new_grades == 'yes':
-#     while True:
-#         name = input('Enter name: ')
+if yes_no_new_grades == 'yes':
+    while True:
+        name = input('Enter name: ')
         
-#         if name == 'exit':
-#             break
+        if name == 'exit':
+            break
 
-#         grade = input('Enter grade: ')
-#         new_grades.append({
-#             'name': name,
-#             'grade': grade
-#         })
+        grade = input('Enter grade: ')
+        new_grades.append({
+            'name': name,
+            'grade': grade
+        })
 
-# with open('grades.txt', 'a') as grades_file:
-#     for student_grade in new_grades:
-#         grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
+with open('grades.txt', 'a') as grades_file:
+    for student_grade in new_grades:
+        grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
 
 
-# all_students_grades =[]
-# with open('grades.txt', 'r') as reader:
-#     all_data = reader.read()
-#     for line in all_data.split('\n'):
-#         x = line.split(' ')
-#         grade = x[1]
-#         all_students_grades.append(grade)
+all_students_grades =[]
+with open('grades.txt', 'r') as reader:
+    all_data = reader.read()
+    for line in all_data.split('\n'):
+        x = line.split(' ')
+        grade = x[1]
+        all_students_grades.append(grade)
 
-# print(all_students_grades)
+print(all_students_grades)
 
 # # Output:
 # # --- Current grades: ---
@@ -121,37 +121,37 @@ with open('grades.txt', 'r') as reader:
 
 
 # # Solution 5 - .append(int(grade))
-# new_grades = []
+new_grades = []
 
-# yes_no_new_grades = input('Do you want to add new grades? ')
+yes_no_new_grades = input('Do you want to add new grades? ')
 
-# if yes_no_new_grades == 'yes':
-#     while True:
-#         name = input('Enter name: ')
+if yes_no_new_grades == 'yes':
+    while True:
+        name = input('Enter name: ')
         
-#         if name == 'exit':
-#             break
+        if name == 'exit':
+            break
 
-#         grade = input('Enter grade: ')
-#         new_grades.append({
-#             'name': name,
-#             'grade': grade
-#         })
+        grade = input('Enter grade: ')
+        new_grades.append({
+            'name': name,
+            'grade': grade
+        })
 
-# with open('grades.txt', 'a') as grades_file:
-#     for student_grade in new_grades:
-#         grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
+with open('grades.txt', 'a') as grades_file:
+    for student_grade in new_grades:
+        grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
 
 
-# all_students_grades =[]
-# with open('grades.txt', 'r') as reader:
-#     all_data = reader.read()
-#     for line in all_data.split('\n'):
-#         x = line.split(' ')
-#         grade = x[1]
-#         all_students_grades.append(int(grade))
+all_students_grades =[]
+with open('grades.txt', 'r') as reader:
+    all_data = reader.read()
+    for line in all_data.split('\n'):
+        x = line.split(' ')
+        grade = x[1]
+        all_students_grades.append(int(grade))
 
-# print(all_students_grades)
+print(all_students_grades)
 
 # # Output:
 # # --- Current grades: ---
@@ -166,39 +166,39 @@ with open('grades.txt', 'r') as reader:
 
 
 # # Solution 6 - SUM and AVERAGE
-# new_grades = []
+new_grades = []
 
-# yes_no_new_grades = input('Do you want to add new grades? ')
+yes_no_new_grades = input('Do you want to add new grades? ')
 
-# if yes_no_new_grades == 'yes':
-#     while True:
-#         name = input('Enter name: ')
+if yes_no_new_grades == 'yes':
+    while True:
+        name = input('Enter name: ')
         
-#         if name == 'exit':
-#             break
+        if name == 'exit':
+            break
 
-#         grade = input('Enter grade: ')
-#         new_grades.append({
-#             'name': name,
-#             'grade': grade
-#         })
+        grade = input('Enter grade: ')
+        new_grades.append({
+            'name': name,
+            'grade': grade
+        })
 
-# with open('grades.txt', 'a') as grades_file:
-#     for student_grade in new_grades:
-#         grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
+with open('grades.txt', 'a') as grades_file:
+    for student_grade in new_grades:
+        grades_file.write(f"\n{student_grade['name']} {student_grade['grade']}")
 
 
-# all_students_grades =[]
-# with open('grades.txt', 'r') as reader:
-#     all_data = reader.read()
-#     for line in all_data.split('\n'):
-#         x = line.split(' ')
-#         grade = x[1]
-#         all_students_grades.append(int(grade))
+all_students_grades =[]
+with open('grades.txt', 'r') as reader:
+    all_data = reader.read()
+    for line in all_data.split('\n'):
+        x = line.split(' ')
+        grade = x[1]
+        all_students_grades.append(int(grade))
 
-# print(all_students_grades)
+print(all_students_grades)
 
-# print(sum(all_students_grades)/len(all_students_grades))
+print(sum(all_students_grades)/len(all_students_grades))
 
 # # Output:
 # # --- Current grades: ---
