@@ -31,7 +31,7 @@ window.mainloop()
 
 
 
-# Solution 3
+# # Solution 3
 import tkinter as tk
 
 window = tk.Tk()
@@ -39,6 +39,28 @@ window = tk.Tk()
 # label - .pack()
 text1 = tk.Label(text='Hello World1!')
 text2 = tk.Label(text='Hello World2!')
+
+text2.pack()
+text1.pack()
+
+window.mainloop()
+
+
+
+# Solution 3 - master
+import tkinter as tk
+
+window = tk.Tk()
+
+# label - 
+text1 = tk.Label(
+    master=window,
+    text='Hello World1!',
+)
+text2 = tk.Label(
+    master=window,
+    text='Hello World2!',
+)
 
 text2.pack()
 text1.pack()
