@@ -3,31 +3,31 @@
 # GUI - Display text in window
 
 # # Solution 1
-# import tkinter as tk
+import tkinter as tk
 
-# window = tk.Tk()
+window = tk.Tk()
 
-# # label - .pack()
-# text = tk.Label(text='Hello World!')
-# text.pack()
+# label - .pack()
+text = tk.Label(text='Hello World!')
+text.pack()
 
-# window.mainloop()
+window.mainloop()
 
 
 
 # # Solution 2
-# import tkinter as tk
+import tkinter as tk
 
-# window = tk.Tk()
+window = tk.Tk()
 
-# # label - .pack()
-# text1 = tk.Label(text='Hello World1!')
-# text1.pack()
+# label - .pack()
+text1 = tk.Label(text='Hello World1!')
+text1.pack()
 
-# text2 = tk.Label(text='Hello World2!')
-# text2.pack()
+text2 = tk.Label(text='Hello World2!')
+text2.pack()
 
-# window.mainloop()
+window.mainloop()
 
 
 
