@@ -44,7 +44,40 @@
 
 
 
-# Solution 3 - Grid
+# # Solution 3 - Grid
+# import tkinter as tk
+
+# window = tk.Tk()
+
+# label_input_name = tk.Label(
+#     window,
+#     text = 'First Name: ',
+# )
+# entry_name = tk.Entry(
+#     window,
+# )
+
+
+# label_input_name.grid(row=0, column=0)
+# entry_name.grid(row=0, column=1)
+
+# label_input_last_name = tk.Label(
+#     window,
+#     text = 'Last Name: ',
+# )
+# entry_last_name = tk.Entry(
+#     window,
+# )
+
+# label_input_last_name.grid(row=1, column=0)
+# entry_last_name.grid(row=1, column=1)
+
+
+# window.mainloop()
+
+
+
+# Solution 4 - label_input_age
 import tkinter as tk
 
 window = tk.Tk()
@@ -72,5 +105,16 @@ entry_last_name = tk.Entry(
 label_input_last_name.grid(row=1, column=0)
 entry_last_name.grid(row=1, column=1)
 
+label_input_age = tk.Label(
+    window,
+    text='Age: ',
+)
+entry_age = tk.Entry(
+    window,
+)
+
+
+label_input_age.grid(row=2, column=0)
+entry_age.grid(row=2, column=1)
 
 window.mainloop()
