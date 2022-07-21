@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# Alarm Clock (Tkinter)
+# Alarm Clock
 
 # Importing required modules
 from tkinter import *
