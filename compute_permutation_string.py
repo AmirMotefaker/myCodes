@@ -3,21 +3,21 @@
 # Compute all the Permutation of the String
 
 # Solution 1 - Using recursion
-# def get_permutation(string, i=0):
+def get_permutation(string, i=0):
 
-#     if i == len(string):   	 
-#         print("".join(string))
+    if i == len(string):   	 
+        print("".join(string))
 
-#     for j in range(i, len(string)):
+    for j in range(i, len(string)):
 
-#         words = [c for c in string]
+        words = [c for c in string]
    
-#         # swap
-#         words[i], words[j] = words[j], words[i]
+        # swap
+        words[i], words[j] = words[j], words[i]
    	 
-#         get_permutation(words, i + 1)
+        get_permutation(words, i + 1)
 
-# print(get_permutation('amir'))
+print(get_permutation('amir'))
 
 # Output:
 # amir
