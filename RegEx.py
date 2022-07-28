@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# RegEx - 
+# RegEx - Regular Expression
 
 # # Solution 1 - Search the string
 import re
