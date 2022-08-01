@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# MySQL - Matplotlib Pie Charts
+# MySQL - MySQL Connection
 
 # # Solution 1 - Test MySQL Connector
 # import mysql.connector
