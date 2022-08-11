@@ -3,11 +3,11 @@
 # MongoDB 
 
 # # Solution 1 - Create Database
-# import pymongo
+import pymongo
 
-# myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 
-# mydb = myclient["mydatabase"]
+mydb = myclient["mydatabase"]
 
 
 
@@ -24,4 +24,3 @@ print(myclient.list_database_names())
 dblist = myclient.list_database_names()
 if "mydatabase" in dblist:
   print("The database exists.")
-
