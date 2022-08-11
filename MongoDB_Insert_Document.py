@@ -4,34 +4,34 @@
 
 # # Solution 1 - Insert Into Collection
 # # Insert a record in the "customers" collection:
-# import pymongo
+import pymongo
 
-# myclient = pymongo.MongoClient('mongodb://localhost:27017/')
-# mydb = myclient['mydatabase']
-# mycol = mydb["customers"]
+myclient = pymongo.MongoClient('mongodb://localhost:27017/')
+mydb = myclient['mydatabase']
+mycol = mydb["customers"]
 
-# mydict = { "name": "John", "address": "Highway 37" }
+mydict = { "name": "John", "address": "Highway 37" }
 
-# x = mycol.insert_one(mydict)
+x = mycol.insert_one(mydict)
 
-# print(x)
+print(x)
 
 
 
 # # Solution 2 - Return the _id Field
 # # The insert_one() method returns a InsertOneResult object, which has a property,
 # # inserted_id, that holds the id of the inserted document.
-# import pymongo
+import pymongo
 
-# myclient = pymongo.MongoClient('mongodb://localhost:27017/')
-# mydb = myclient['mydatabase']
-# mycol = mydb["customers"]
+myclient = pymongo.MongoClient('mongodb://localhost:27017/')
+mydb = myclient['mydatabase']
+mycol = mydb["customers"]
 
-# mydict = { "name": "Peter", "address": "Lowstreet 27" }
+mydict = { "name": "Peter", "address": "Lowstreet 27" }
 
-# x = mycol.insert_one(mydict)
+x = mycol.insert_one(mydict)
 
-# print(x.inserted_id)
+print(x.inserted_id)
 
 
 
