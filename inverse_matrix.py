@@ -54,3 +54,20 @@ print(np.linalg.inv(A))
 
 #  [[-1.25  0.75]
 #   [ 0.75 -0.25]]]
+
+
+
+# Solution 4 - NumPy
+# linalg.inv(a): Compute the (multiplicative) inverse of a matrix.
+import numpy as np
+from numpy.linalg import inv
+
+a = np.array([[1., 2.], [3., 4.]])
+
+ainv = inv(np.matrix(a))
+
+print(ainv)
+
+# Output:
+# [[-2.   1. ]
+#  [ 1.5 -0.5]]
