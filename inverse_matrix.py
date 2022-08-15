@@ -40,7 +40,7 @@ print(np.linalg.inv(A))
 
 
 
-# Solution 3 - NumPy
+# # Solution 3 - NumPy
 import numpy as np
   
 A = np.array([[[1., 2.], [3., 4.]],
@@ -48,17 +48,16 @@ A = np.array([[[1., 2.], [3., 4.]],
   
 print(np.linalg.inv(A))
 
-# Output:
-# [[[-2.    1.  ]
-#   [ 1.5  -0.5 ]]
+# # Output:
+# # [[[-2.    1.  ]
+# #   [ 1.5  -0.5 ]]
 
-#  [[-1.25  0.75]
-#   [ 0.75 -0.25]]]
+# #  [[-1.25  0.75]
+# #   [ 0.75 -0.25]]]
 
 
-
-# Solution 4 - NumPy
-# linalg.inv(a): Compute the (multiplicative) inverse of a matrix.
+# # Solution 4 - NumPy
+# # linalg.inv(a): Compute the (multiplicative) inverse of a matrix.
 import numpy as np
 from numpy.linalg import inv
 
@@ -68,6 +67,69 @@ ainv = inv(np.matrix(a))
 
 print(ainv)
 
+# # Output:
+# # [[-2.   1. ]
+# #  [ 1.5 -0.5]]
+
+
+
+# # Solution 5 - NumPy (3*3)
+# # linalg.inv(a): Compute the (multiplicative) inverse of a matrix.
+import numpy as np
+from numpy.linalg import inv
+
+a = np.array([[3, 0, 2],
+              [2, 0, -2],
+              [0, 1, 1]])
+
+ainv = inv(np.matrix(a))
+
+print(ainv)
+
+# # Output:
+# # [[ 0.2  0.2  0. ]
+# #  [-0.2  0.3  1. ]
+# #  [ 0.2 -0.3 -0. ]]
+
+
+
+# mathematical logic for calculating an inverse matrix
+def return_transpose(mat):
+    return map(list,zip(*mat))
+
+def return_matrix_minor(mat,i,j):
+    return [row[:j] + row[j+1:] for row in (mat[:i]+mat[i+1:])]
+
+def return_determinant(mat):
+    if len(mat) == 2:
+        return mat[0][0]*mat[1][1]-mat[0][1]*mat[1][0]
+
+    determinant = 0
+    for c in range(len(m)):
+        determinant += ((-1)**c)*m[0][c]*return_determinant(return_matrix_minor(m,0,c))
+    return determinant
+
+def inverse_matrix(m):
+    determinant = return_determinant(m)
+    if len(m) == 2:
+        return [[m[1][1]/determinant, -1*m[0][1]/determinant],
+                [-1*m[1][0]/determinant, m[0][0]/determinant]]
+
+    cfs = []
+    for r in range(len(m)):
+        cfRow = []
+        for c in range(len(m)):
+            minor = return_matrix_minor(m,r,c)
+            cfRow.append(((-1)**(r+c)) * return_determinant(minor))
+        cfs.append(cfRow)
+    cfs = return_transpose(cfs)
+    for r in range(len(cfs)):
+        for c in range(len(cfs)):
+            cfs[r][c] = cfs[r][c]/determinant
+    return cfs
+
+m = [[4,3],[8,5]]
+print(inverse_matrix(m))
+
 # Output:
-# [[-2.   1. ]
-#  [ 1.5 -0.5]]
+# [[-1.25, 0.75], [2.0, -1.0]]
