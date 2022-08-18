@@ -22,6 +22,9 @@
 # [ 0.52573111 -0.85065081]] 
 
 
+# linalg.eig(a): Compute the eigenvalues and right eigenvectors of a square array.
+
+
 # Solution 1
 import numpy as np
   
