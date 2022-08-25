@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # GUI(Graphical User Interface) - Making a simple window
 
