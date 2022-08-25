@@ -14,3 +14,7 @@ for char in my_str:
        no_punctuations = no_punctuations + char
 
 print(no_punctuations)
+
+# Output:
+# Enter a string: I'm Amir.
+# Im Amir
