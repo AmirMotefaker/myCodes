@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Get the Class Name of an Instance
 
