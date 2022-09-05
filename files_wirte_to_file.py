@@ -1,14 +1,14 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Working with files - write to files
 
 # # Solution 1
-# f = open('words.txt', 'w')
+f = open('words.txt', 'w')
 
-# f.write('123\n')
-# f.write('456\n')
+f.write('123\n')
+f.write('456\n')
 
-# f.writelines(['hello\n', 'hi'])
+f.writelines(['hello\n', 'hi'])
 
 # # Output in words.txt:
 # # 123
@@ -19,11 +19,11 @@
 
 
 # # Solution 2 - writelines - map - lambda
-# f = open('words.txt', 'w')
+f = open('words.txt', 'w')
 
-# names = ['john', 'joe', 'david']
+names = ['john', 'joe', 'david']
 
-# f.writelines(map(lambda name: name+'\n', names))
+f.writelines(map(lambda name: name+'\n', names))
 
 # # # Output in words.txt:
 # # john
