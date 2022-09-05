@@ -1,15 +1,15 @@
-# Code by @AmirMotefaker
+Code by AmirMotefaker
 
 # Working with files - Open multiple files simultaneously
 
 # # Solution 1
-# file_text = None
+file_text = None
 
-# with open('grades.txt', 'r') as reader:
-#     file_text = reader.read()
+with open('grades.txt', 'r') as reader:
+    file_text = reader.read()
 
-# with open('hello.txt', 'w') as writer:
-#     writer.write(file_text)
+with open('hello.txt', 'w') as writer:
+    writer.write(file_text)
 
 
 # # Output( create file hello.txt with this items):
