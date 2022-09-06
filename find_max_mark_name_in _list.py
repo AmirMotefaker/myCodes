@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Find Max mark and name in List - Tuples Unpacking
 
