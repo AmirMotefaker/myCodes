@@ -33,3 +33,8 @@ num1 = int(input("Enter number1: "))
 num2 = int(input("Enter number2: "))
 
 print("The GCD is", gcd(num1, num2))
+
+# Output:
+# Enter number1: 12
+# Enter number2: 64
+# The GCD is 4
