@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Getting Input From User
 
