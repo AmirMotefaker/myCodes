@@ -29,3 +29,12 @@ num1 = int(input("Enter number1: "))
 num2 = int(input("Enter number2: "))
 
 print("The L.C.M. is", lcm(num1, num2))
+
+# Output:
+# Enter number1: 2
+# Enter number2: 3
+# The L.C.M. is 6
+
+# Enter number1: 2
+# Enter number2: 3
+# The L.C.M. is 6
