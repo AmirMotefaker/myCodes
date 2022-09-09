@@ -2,21 +2,21 @@
 
 # Language Translator Using Google API
 
-# import googletrans
+import googletrans
  
-# print(googletrans.LANGUAGES)
+print(googletrans.LANGUAGES)
 
-# from googletrans import Translator
+from googletrans import Translator
 
-# translator = Translator()
+translator = Translator()
 
-# result = translator.translate('ich liebe dich')
+result = translator.translate('ich liebe dich')
 
-# print(result.src)
-# print(result.dest)
-# print(result.origin)
-# print(result.text)
-# print(result.pronunciation)
+print(result.src)
+print(result.dest)
+print(result.origin)
+print(result.text)
+print(result.pronunciation)
 
 
 # Specifying Source and Destination Languages
