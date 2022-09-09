@@ -32,3 +32,16 @@ elif (year % 4 ==0) and (year % 100 != 0):
 # year is not leap year
 else:
     print("{0} is not a leap year".format(year))
+
+# Output
+# Enter a number: 2022
+# 2022 is not a leap year
+
+# Enter a number: 2021
+# 2021 is not a leap year
+
+# Enter a number: 2024
+# 2024 is a leap year
+
+# Enter a number: 1979
+# 1979 is not a leap year
