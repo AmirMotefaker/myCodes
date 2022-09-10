@@ -3,13 +3,13 @@
 # Map
 
 ## Standard
-# my_nums = [1,2,3,4,5,6]
+my_nums = [1,2,3,4,5,6]
 
-# def power_two(num):
-#     return num ** 2
+def power_two(num):
+    return num ** 2
 
-# for num in my_nums:
-#     print(power_two(num))
+for num in my_nums:
+    print(power_two(num))
 
 # Output:
 # 1
