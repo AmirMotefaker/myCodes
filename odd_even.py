@@ -12,3 +12,9 @@ if (num % 2) == 0:
 else:
    print("{0} is Odd".format(num))
     
+# Output:
+# Enter a number: 13487
+# 13487 is Odd
+
+# Enter a number: 24515870
+# 24515870 is Even
