@@ -10,3 +10,14 @@ if num >= 0:
        print("Positive number")
 else:
    print("Negative number")
+
+
+# Output:
+# Enter a number: -4
+# Negative number
+
+# Enter a number: 139
+# Positive number
+
+# Enter a number: 0
+# Zero
