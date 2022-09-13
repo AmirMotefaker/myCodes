@@ -3,14 +3,14 @@
 # Raise Exception
 
 # # Solution 1
-# def calc_income(income):
-#     if income < 0:
-#         raise Exception('Income should not be a negative number!')
+def calc_income(income):
+    if income < 0:
+        raise Exception('Income should not be a negative number!')
         
-#     return income * 2
+    return income * 2
 
-# user_income = int(input('Enter your income: '))
-# print(calc_income(user_income))
+user_income = int(input('Enter your income: '))
+print(calc_income(user_income))
 
 
 # # Output:
