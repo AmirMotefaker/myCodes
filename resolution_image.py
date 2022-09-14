@@ -5,17 +5,17 @@
 
 # Solution 1 - Using PIL
 
-# import PIL
-# from PIL import Image
+import PIL
+from PIL import Image
   
-# # loading the image
-# img = PIL.Image.open("image.png")
+# loading the image
+img = PIL.Image.open("image.png")
   
-# # fetching the dimensions
-# wid, hgt = img.size
+# fetching the dimensions
+wid, hgt = img.size
   
-# # displaying the dimensions
-# print(str(wid) + "x" + str(hgt))
+# displaying the dimensions
+print(str(wid) + "x" + str(hgt))
 
 
 
