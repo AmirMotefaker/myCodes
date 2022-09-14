@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Remove Duplicate Element From a List
 
@@ -19,5 +19,5 @@ list_2 = [7, 8, 2, 1]
 print(list(set(list_1) ^ set(list_2)))
 
 # Output:
-[4, 6, 7, 8]
+# [4, 6, 7, 8]
 
