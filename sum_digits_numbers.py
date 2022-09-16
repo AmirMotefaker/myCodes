@@ -14,15 +14,15 @@
 # 1 % 10 -> 1
 # 1 // 10 -> 0
 
-# user_input = int(input('Enter your number: '))
+user_input = int(input('Enter your number: '))
 
-# result = 0
+result = 0
 
-# while user_input != 0:
-#     result += user_input % 10
-#     user_input = user_input // 10
+while user_input != 0:
+    result += user_input % 10
+    user_input = user_input // 10
 
-# print(result)
+print(result)
 
 # Output:
 # Enter your number: 1234
