@@ -15,3 +15,9 @@ if num < 0:
 else:
    print("The sum is",sum_recursion(num))
    
+# Output:
+# Enter number: 17
+# The sum is 153
+
+# Enter number: -83
+# Enter a positive number
