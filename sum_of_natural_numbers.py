@@ -19,4 +19,6 @@ else:
        num -= 1
    print("The sum is", sum)
    
- 
+# Output:
+# Enter number: 16
+# The sum is 136
