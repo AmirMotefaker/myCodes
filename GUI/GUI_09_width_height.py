@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # GUI - width and height
 # Solution 1 - sticky with Tuple - sticky=(E, W)
