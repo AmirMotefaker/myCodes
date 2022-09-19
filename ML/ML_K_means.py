@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Machine Learning - K-means
 # K-means is an unsupervised learning method for clustering data points. 
