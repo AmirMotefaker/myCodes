@@ -1,8 +1,8 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Machine Learning - Decision Tree
 
-# # Solotion 1 - Read and print the data set
+# # Solution 1 - Read and print the data set
 import pandas
 from sklearn import tree
 import pydotplus
@@ -32,7 +32,7 @@ print(df)
 
 
 
-# # Solotion 2 - Change string values into numerical values
+# # Solution 2 - Change string values into numerical values
 import pandas
 from sklearn import tree
 import pydotplus
@@ -68,7 +68,7 @@ print(df)
 
 
 
-# # Solotion 3 - X is the feature columns, y is the target column
+# # Solution 3 - X is the feature columns, y is the target column
 import pandas
 from sklearn import tree
 import pydotplus
@@ -123,7 +123,7 @@ print(y)
 
 
 
-# Solotion 4 - Create a Decision Tree, save it as an image, and show the image
+# Solution 4 - Create a Decision Tree, save it as an image, and show the image
 import pandas
 from sklearn import tree
 import pydotplus
@@ -181,7 +181,7 @@ print("[0] means 'NO'")
 
 
 
-# Solotion 6 - What would the answer be if the comedy rank was 6?
+# Solution 6 - What would the answer be if the comedy rank was 6?
 import pandas
 from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
