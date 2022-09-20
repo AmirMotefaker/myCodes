@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Machine Learning - Percentiles
 # Percentiles are used in statistics to give you a number 
