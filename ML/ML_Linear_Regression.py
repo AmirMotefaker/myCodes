@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Machine Learning - Linear Regression
 # The term regression is used when you try to find the relationship between variables.
