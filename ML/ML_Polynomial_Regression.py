@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Machine Learning - Polynomial Regression
 # If your data points clearly will not fit a linear regression 
