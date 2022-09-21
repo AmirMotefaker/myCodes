@@ -1,4 +1,4 @@
-# Code b @AmirMotefaker
+# Code by AmirMotefaker
 
 # OOP - Inheritance 
 
