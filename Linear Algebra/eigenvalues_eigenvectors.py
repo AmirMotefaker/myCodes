@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# Eigenvalues and Eigenvectors
+# Eigenvalues and Eigenvector
 
 # Eigen vector of a matrix A is a vector represented by a matrix X such that 
 # when X is multiplied with matrix A, then the direction of the resultant matrix remains same as vector X.
