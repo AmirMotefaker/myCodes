@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Upper Triangular Matrix:
 # A square matrix is called upper triangular if all the entries below the main diagonal are zero.
