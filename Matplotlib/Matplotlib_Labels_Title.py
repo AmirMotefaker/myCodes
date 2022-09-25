@@ -59,7 +59,7 @@ plt.show()
 
 
 # Solution 4  - Position the Title
-You can use the loc parameter in title() to position the title.
+# You can use the loc parameter in title() to position the title.
 import numpy as np
 import matplotlib.pyplot as plt
 
