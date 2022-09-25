@@ -2,7 +2,7 @@
 
 # Matplotlib - Matplotlib Line
 
-# # Solution 1 - Linestyle - Use a dotted line
+ Solution 1 - Linestyle - Use a dotted line
 import matplotlib.pyplot as plt
 import numpy as np
 
