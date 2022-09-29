@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Create a Long Multiline String
 
