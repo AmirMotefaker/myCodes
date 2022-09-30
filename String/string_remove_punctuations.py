@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Remove Punctuations From a String
 
