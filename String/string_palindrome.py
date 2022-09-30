@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Check Whether a String is Palindrome or Not
 
