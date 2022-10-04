@@ -5,69 +5,69 @@
 
 # Solution 1
 
-# import turtle 
+import turtle 
     
-# # create screen object
-# sc = turtle.Screen()
+# create screen object
+sc = turtle.Screen()
     
-# # create turtle object
-# pen = turtle.Turtle()
+# create turtle object
+pen = turtle.Turtle()
     
-# # method to draw square
-# def drawSqr():
+# method to draw square
+def drawSqr():
     
-#   for i in range(4):
-#     pen.forward(30)
-#     pen.left(90)
+  for i in range(4):
+    pen.forward(30)
+    pen.left(90)
     
-#   pen.forward(30)
+  pen.forward(30)
     
    
       
-# # Driver Code
-# if __name__ == "__main__" :
+# Driver Code
+if __name__ == "__main__" :
        
-#     # set screen
-#     sc.setup(600, 600)
+    # set screen
+    sc.setup(600, 600)
         
-#     # set turtle object speed
-#     pen.speed(100)
+    # set turtle object speed
+    pen.speed(100)
         
-#     # loops for board
-#     for i in range(8):
+    # loops for board
+    for i in range(8):
         
-#       # not ready to draw
-#       pen.up()
+      # not ready to draw
+      pen.up()
         
-#       # set position for every row
-#       pen.setpos(0, 30 * i)
+      # set position for every row
+      pen.setpos(0, 30 * i)
         
-#       # ready to draw
-#       pen.down()
+      # ready to draw
+      pen.down()
         
-#       # row
-#       for j in range(8):
+      # row
+      for j in range(8):
         
-#         # conditions for alternative color
-#         if (i + j)% 2 == 0:
-#           col ='black'
+        # conditions for alternative color
+        if (i + j)% 2 == 0:
+          col ='black'
         
-#         else:
-#           col ='white'
+        else:
+          col ='white'
         
-#         # fill with given color
-#         pen.fillcolor(col)
+        # fill with given color
+        pen.fillcolor(col)
         
-#         # start filling with colour
-#         pen.begin_fill()
+        # start filling with colour
+        pen.begin_fill()
         
-#         # call method
-#         drawSqr()
-#         # stop filling
-#         pen.end_fill()
+        # call method
+        drawSqr()
+        # stop filling
+        pen.end_fill()
         
-#     # hide the turtle
-#     pen.hideturtle()
+    # hide the turtle
+    pen.hideturtle()
 
 
 # Solution 2
