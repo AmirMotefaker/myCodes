@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Convert Celsius To Fahrenheit and Fahrenheit to Celsius
 
