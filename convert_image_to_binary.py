@@ -15,38 +15,38 @@
 # 3- Set up a Threshold mark, pixels above the given mark
 #    will turn white, and below the mark will turn black.
 
-# import cv2
+import cv2
   
 # # read the image file
-# img = cv2.imread('image2.png', 2)
+img = cv2.imread('image2.png', 2)
   
-# ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
   
 # # converting to its binary form
-# bw = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+bw = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
   
 
-# cv2.imshow("Binary", bw_img)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
+cv2.imshow("Binary", bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 ## Solution 2
 
 ## Convert color image to black and white
-# import cv2
+import cv2
 
 # #read image
-# img_grey = cv2.imread('image2.png', cv2.IMREAD_GRAYSCALE)
+img_grey = cv2.imread('image2.png', cv2.IMREAD_GRAYSCALE)
 
 # # define a threshold, 128 is the middle of black and white in grey scale
-# thresh = 128
+thresh = 128
 
 # # threshold the image
-# img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
+img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
 
 # #save image
-# cv2.imwrite('image2-binary.png',img_binary) 
+cv2.imwrite('image2-binary.png',img_binary) 
 
 
 
