@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Convert Decimal to Binary, Octal and Hexadecimal
 
