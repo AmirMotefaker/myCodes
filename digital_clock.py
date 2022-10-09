@@ -1,4 +1,5 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
+
 # Digital Clock - Tkinter
 
 
