@@ -17,5 +17,19 @@ else:
    print("Fibonacci sequence:")
    for i in range(terms):
        print(fib_recursion(i))
-      
+  
+# Output:
+# Enter terms: 11
+# Fibonacci sequence:
+# 0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+# 13
+# 21
+# 34
+# 55
  
