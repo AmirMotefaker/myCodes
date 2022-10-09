@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Find the Factors of a Number
 
@@ -11,3 +11,13 @@ def factors_number(x):
 num = int(input("Enter number: "))
 
 factors_number(num)
+
+# Output:
+# Enter number: 18
+# The factors of 18 are:
+# 1
+# 2
+# 3
+# 6
+# 9
+# 18
