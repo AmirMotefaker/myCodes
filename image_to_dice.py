@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 # With the help of @jadijadi
 
 # convert image to dice pattern
