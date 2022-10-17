@@ -6,13 +6,25 @@
 
 
 # Solution 1 
-# num = 13
+num = 13
 # # To take input from the user
 # # num = int(input("Display multiplication table of? "))
 
 # # Iterate 10 times from i = 1 to 10
-# for i in range(1, 11):
-#    print(num, 'x', i, '=', num*i)
+for i in range(1, 11):
+   print(num, 'x', i, '=', num*i)
+
+# Output:
+# 13 x 1 = 13
+# 13 x 2 = 26
+# 13 x 3 = 39
+# 13 x 4 = 52
+# 13 x 5 = 65
+# 13 x 6 = 78
+# 13 x 7 = 91
+# 13 x 8 = 104
+# 13 x 9 = 117
+# 13 x 10 = 130
 
 
 
