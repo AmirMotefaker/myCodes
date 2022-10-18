@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # # Solution 1 
 n=int(input("Enter a number: "))
