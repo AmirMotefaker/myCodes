@@ -1,6 +1,6 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
-# QR Code generator
+# QR-Code generator
 
 
 # Generator QRcode(Basic)
