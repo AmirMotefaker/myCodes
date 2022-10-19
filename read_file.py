@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Read a File Line by Line Into a List
 
