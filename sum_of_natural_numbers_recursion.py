@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Find the Sum of Natural Numbers Using Recursion
 
