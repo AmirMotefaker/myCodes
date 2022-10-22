@@ -1,4 +1,4 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
 # Split a List Into Evenly Sized Chunks
 
