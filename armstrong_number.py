@@ -1,4 +1,4 @@
-# Code by @AMotefaker
+# Code by @AmMotefaker
 
 # Find Armstrong Number in an Interval
 
