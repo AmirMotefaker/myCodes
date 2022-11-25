@@ -1,4 +1,4 @@
-# Code by @AMotefaker
+# Code by @AmMotefaker
 
 # Assert Keyword - Assertion
 
