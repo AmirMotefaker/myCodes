@@ -1,4 +1,4 @@
-# Code by @AMotefaker
+# Code by @AmMotefaker
 
 # Append to a File
 
