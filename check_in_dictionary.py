@@ -1,4 +1,4 @@
-# Code by irMotefaker
+# Code by @AmirMotefaker
 
 # Check if a Key is Already Present in a Dictionary
 
