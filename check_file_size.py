@@ -1,4 +1,4 @@
-# Code by mirMotefaker
+# Code by @AmirMotefaker
 
 # Iterate Through Two Lists in Parallel
 
